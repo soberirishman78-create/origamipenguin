@@ -370,3 +370,18 @@ header, nav, .hero, main, footer {
 @media (max-width: 480px) {
   .origami-bg { display: none; }
 }
+
+
+/* Fix: ensure all child elements inside origami SVGs have no fill and inherit stroke */
+.ori-shape polygon,
+.ori-shape line,
+.ori-shape polyline,
+.ori-shape path {
+  fill: none;
+}
+
+/* Fix: constrain SVG size so it doesn't overflow */
+.ori-shape {
+  overflow: visible;
+  max-width: 100%;
+}
