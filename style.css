@@ -118,7 +118,12 @@ main {
 }
 
 /* Typography */
-h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: #1a202c; font-weight: 700; }
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #1a202c;
+  font-weight: 700;
+}
+
 h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
 h3 { font-size: 1.5rem; margin-bottom: 1rem; color: #2d3748; }
 
@@ -176,15 +181,8 @@ h3 { font-size: 1.5rem; margin-bottom: 1rem; color: #2d3748; }
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-.feature-card h3 {
-  color: #ff6b9d;
-  margin-bottom: 1rem;
-}
-
-.feature-card p {
-  color: #4a5568;
-  margin-bottom: 1.5rem;
-}
+.feature-card h3 { color: #ff6b9d; margin-bottom: 1rem; }
+.feature-card p { color: #4a5568; margin-bottom: 1.5rem; }
 
 /* CTA Boxes - Revenue Focused */
 .cta-box {
@@ -254,14 +252,8 @@ footer {
   font-size: 0.95rem;
 }
 
-footer a {
-  color: #ff6b9d;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
+footer a { color: #ff6b9d; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
@@ -279,7 +271,6 @@ footer a:hover {
    ORIGAMI FLOATING SHAPES - Background Decor
    ============================================ */
 
-/* Wrapper that holds all floating shapes - sits behind everything */
 .origami-bg {
   position: fixed;
   top: 0; left: 0;
@@ -289,19 +280,21 @@ footer a:hover {
   overflow: hidden;
 }
 
-/* Base style for every shape */
 .ori-shape {
   position: absolute;
   opacity: 0;
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
-/* Individual shape positions, sizes, colors & animation names */
+.ori-shape polygon,
+.ori-shape line,
+.ori-shape polyline,
+.ori-shape path {
+  fill: none;
+}
+
 .ori-1 {
   width: 90px; height: 90px;
   top: 8%; left: 3%;
@@ -339,49 +332,24 @@ footer a:hover {
   animation: floatC 30s 4s infinite alternate ease-in-out;
 }
 
-/* Float A: gentle bob + slight rotate */
 @keyframes floatA {
   0%   { opacity: 0.07; transform: translateY(0px)   rotate(0deg); }
   50%  { opacity: 0.13; transform: translateY(-18px) rotate(5deg); }
   100% { opacity: 0.07; transform: translateY(6px)   rotate(-3deg); }
 }
 
-/* Float B: wider sway */
 @keyframes floatB {
   0%   { opacity: 0.06; transform: translateY(0px)   rotate(0deg); }
   50%  { opacity: 0.12; transform: translateY(-22px) rotate(-6deg); }
   100% { opacity: 0.08; transform: translateY(8px)   rotate(4deg); }
 }
 
-/* Float C: slow drift */
 @keyframes floatC {
   0%   { opacity: 0.05; transform: translateY(0px)   rotate(0deg); }
   50%  { opacity: 0.11; transform: translateY(-14px) rotate(8deg); }
   100% { opacity: 0.06; transform: translateY(4px)   rotate(-5deg); }
 }
 
-/* Make sure page content sits above the shapes */
-header, nav, .hero, main, footer {
-  position: relative;
-  z-index: 1;
-}
-
-/* Hide shapes on very small screens to keep things clean */
 @media (max-width: 480px) {
   .origami-bg { display: none; }
-}
-
-
-/* Fix: ensure all child elements inside origami SVGs have no fill and inherit stroke */
-.ori-shape polygon,
-.ori-shape line,
-.ori-shape polyline,
-.ori-shape path {
-  fill: none;
-}
-
-/* Fix: constrain SVG size so it doesn't overflow */
-.ori-shape {
-  overflow: visible;
-  max-width: 100%;
 }
