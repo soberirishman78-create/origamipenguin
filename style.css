@@ -353,3 +353,9 @@ footer a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
   .origami-bg { display: none; }
 }
+
+/* Ensure page content appears above origami background */
+header, nav, .hero, main, footer {
+  position: relative;
+  z-index: 1;
+}
