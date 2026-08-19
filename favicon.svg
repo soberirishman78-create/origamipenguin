@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Origami penguin favicon: geometric fold style -->
+  <rect width="64" height="64" rx="12" fill="#ff6b9d"/>
+  <!-- body: dark back -->
+  <polygon points="32,8 14,30 14,52 32,56" fill="#2d3748"/>
+  <polygon points="32,8 50,30 50,52 32,56" fill="#1a202c"/>
+  <!-- white belly -->
+  <polygon points="32,22 22,34 24,52 32,56 40,52 42,34" fill="#ffffff"/>
+  <!-- beak -->
+  <polygon points="32,16 27,22 37,22" fill="#f6ad55"/>
+  <!-- eyes -->
+  <circle cx="26" cy="15" r="2.2" fill="#ffffff"/>
+  <circle cx="38" cy="15" r="2.2" fill="#ffffff"/>
+  <circle cx="26" cy="15" r="1" fill="#1a202c"/>
+  <circle cx="38" cy="15" r="1" fill="#1a202c"/>
+  <!-- feet -->
+  <polygon points="24,56 20,61 30,58" fill="#f6ad55"/>
+  <polygon points="40,56 44,61 34,58" fill="#f6ad55"/>
+</svg>

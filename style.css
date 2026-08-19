@@ -52,6 +52,24 @@ header p {
   z-index: 1;
 }
 
+/* Site logo link — used on subpages so <h1> is reserved for the page topic */
+.site-logo {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+}
+.site-logo:hover { color: #fff; opacity: 0.92; }
+
+/* Page-topic h1 inside main matches previous h2 sizing (no visual change) */
+main h1 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+
 /* Navigation */
 nav {
   background: #fff;
@@ -258,6 +276,8 @@ footer a:hover { text-decoration: underline; }
 /* Mobile Responsive */
 @media (max-width: 768px) {
   header h1 { font-size: 2rem; }
+  .site-logo { font-size: 2rem; }
+  main h1 { font-size: 1.8rem; }
   .hero h2 { font-size: 1.8rem; }
   .hero p { font-size: 1rem; }
   nav a { padding: 0.8rem 1rem; font-size: 0.9rem; display: block; }
