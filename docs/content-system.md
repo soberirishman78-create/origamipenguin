@@ -31,3 +31,7 @@ Existing public Amazon URLs, including `origamipeng-20`, remain unchanged. Regre
 Do not add a signup form until the owner chooses or confirms an existing email provider and approves its account, privacy, consent and costs. A useful first free download is the classroom lesson/student task already available in the print layout. Next, prepare a small fold-tested beginner project collection. Require accessible signup, explicit consent, unsubscribe, a tested delivery email and a privacy-policy update before launch. Do not collect addresses into a nonfunctional form or silently enroll visitors.
 
 A future outbound analytics implementation should measure only the needed event category, page path and product ID, avoid full URLs/identifiers, respect privacy choices, never delay navigation, and be verified against its real collection endpoint. Do not activate the old scaffold until the backend and privacy behavior are confirmed.
+
+## Deployment source indexing
+
+The current static-root deployment also serves build-input files. `_headers` marks `/content/`, `/templates/`, `/scripts/`, `/tests/`, `/docs/` and README as `X-Robots-Tag: noindex` on Cloudflare Pages. The Pages development hostnames are also noindex; production content on origamipenguin.com remains indexable. These public repository files contain no secrets. They are not sitemap entries or navigational destinations. Verify the header after deployment so legacy body fragments cannot become duplicate search landing pages. Do not put secrets into any source or generated file.

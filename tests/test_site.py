@@ -97,6 +97,9 @@ class SiteTests(unittest.TestCase):
                     v=a.get('src') if tag!='link' else a.get('href') if a.get('rel') in ['stylesheet','icon'] else None
                     if v and v.startswith('/'):self.assertTrue((ROOT/urlsplit(v).path.lstrip('/')).is_file())
         self.assertNotIn('@import',(ROOT/'style.css').read_text())
+        headers=(ROOT/'_headers').read_text()
+        for directory in ['content','templates','scripts','tests','docs']:
+            self.assertIn('/'+directory+'/*\n  X-Robots-Tag: noindex',headers)
         self.assertIn("var CLICK_ENDPOINT = '';",(ROOT/'js/outbound.js').read_text())
         self.assertEqual(json.loads((ROOT/'content/products.json').read_text())['pressBooks'],[])
         self.assertEqual(json.loads((ROOT/'content/products.json').read_text())['teacherResources'],[])
