@@ -24,7 +24,7 @@ class Page(HTMLParser):
 class SiteTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.files={p.name:p.read_text() for p in ROOT.glob('*.html') if not p.name.startswith('google')}
+        cls.files={p.name:p.read_text(encoding='utf-8') for p in ROOT.glob('*.html') if not p.name.startswith('google')}
         cls.pages={n:Page(s) for n,s in cls.files.items()}
     def test_generated_pages_current(self):
         subprocess.run(['python','scripts/build.py','--check'],cwd=ROOT,check=True)
@@ -52,7 +52,7 @@ class SiteTests(unittest.TestCase):
                     self.assertTrue(f.is_file(),href)
                     if u.fragment and target in self.pages:self.assertIn(u.fragment,self.pages[target].ids)
     def test_metadata_and_sitemap(self):
-        sitemap=ET.fromstring((ROOT/'sitemap.xml').read_text())
+        sitemap=ET.fromstring((ROOT/'sitemap.xml').read_text(encoding='utf-8'))
         urls={node.text for node in sitemap.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
         expected=set();titles=[];descriptions=[]
         for name,p in self.pages.items():
@@ -75,9 +75,15 @@ class SiteTests(unittest.TestCase):
                     for n,step in enumerate(data['step'],1):
                         self.assertIn('step-'+str(n),self.pages[name].ids)
                         self.assertEqual(step['url'],ORIGIN+'/'+name.removesuffix('.html')+'#step-'+str(n))
+    def test_unverified_penguin_has_visible_review_notice(self):
+        text=self.files['penguin-tutorial.html']
+        self.assertTrue(self.pages['penguin-tutorial.html'].find('h2',id='review-heading'))
+        self.assertIn('We have not yet verified a corrected sequence by folding it.',text)
+        schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)]
+        self.assertFalse(any(item['@type']=='HowTo' for item in schemas))
     def test_affiliate_tracking_preserved(self):
         # Baseline public URLs captured before any edits. No tag rewriting.
-        expected=json.loads((ROOT/'tests/affiliate-baseline.json').read_text())
+        expected=json.loads((ROOT/'tests/affiliate-baseline.json').read_text(encoding='utf-8'))
         current={}
         for name,p in self.pages.items():
             urls=[]
@@ -96,12 +102,12 @@ class SiteTests(unittest.TestCase):
                 for a in p.find(tag):
                     v=a.get('src') if tag!='link' else a.get('href') if a.get('rel') in ['stylesheet','icon'] else None
                     if v and v.startswith('/'):self.assertTrue((ROOT/urlsplit(v).path.lstrip('/')).is_file())
-        self.assertNotIn('@import',(ROOT/'style.css').read_text())
-        headers=(ROOT/'_headers').read_text()
+        self.assertNotIn('@import',(ROOT/'style.css').read_text(encoding='utf-8'))
+        headers=(ROOT/'_headers').read_text(encoding='utf-8')
         for directory in ['content','templates','scripts','tests','docs']:
             self.assertIn('/'+directory+'/*\n  X-Robots-Tag: noindex',headers)
-        self.assertIn("var CLICK_ENDPOINT = '';",(ROOT/'js/outbound.js').read_text())
-        self.assertEqual(json.loads((ROOT/'content/products.json').read_text())['pressBooks'],[])
-        self.assertEqual(json.loads((ROOT/'content/products.json').read_text())['teacherResources'],[])
+        self.assertIn("var CLICK_ENDPOINT = '';",(ROOT/'js/outbound.js').read_text(encoding='utf-8'))
+        self.assertEqual(json.loads((ROOT/'content/products.json').read_text(encoding='utf-8'))['pressBooks'],[])
+        self.assertEqual(json.loads((ROOT/'content/products.json').read_text(encoding='utf-8'))['teacherResources'],[])
 
 if __name__=='__main__':unittest.main()

@@ -1,7 +1,7 @@
 {
   "slug": "penguin-tutorial.html",
   "heading": "Simple Origami Penguin for Beginners",
-  "introduction": "Follow the diagram and written steps below to fold your very own origami penguin. All you need is one square sheet of paper — no scissors, no glue!",
+  "introduction": "This page contains our existing penguin diagram and written instructions. Please read the review note before starting.",
   "difficulty": "Easy",
   "durationMinutes": 10,
   "durationNote": "Planning estimate; allow extra time for your first attempt.",
@@ -92,7 +92,9 @@
   "printableUrl": null,
   "videoUrl": null,
   "review": {
-    "status": "legacy-migrated",
-    "note": "Original instructions preserved from 47ecea9, not newly fold-tested. Before scaling: independently fold-test every step and add owned photographs/diagrams."
+    "status": "needs-review",
+    "reviewedAt": "2026-10-01",
+    "note": "Desk review identified text/diagram inconsistencies. Model attribution and folding sequence remain unverified; no physical fold test performed. See docs/penguin-quality-review.md.",
+    "publicNote": "The written steps and diagram do not consistently agree. Step 6 says both up and down, and later folds need clarification. We have not yet verified a corrected sequence by folding it. Please wait for the corrected tutorial before using this page for a first attempt or a class."
   }
 }
