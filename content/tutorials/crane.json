@@ -1,0 +1,81 @@
+{
+  "slug": "crane-tutorial.html",
+  "heading": "Classic Origami Crane",
+  "introduction": "The crane is one of the most recognized origami models in the world, and a great next project once you've folded your first penguin. All you need is one square sheet of paper.",
+  "difficulty": "Moderate",
+  "durationMinutes": 20,
+  "durationNote": "Planning estimate; allow extra time for your first attempt.",
+  "paper": "One square sheet of thin origami paper, about 15 × 15 cm (6 × 6 in).",
+  "materials": [
+    "One square sheet of paper",
+    "A flat folding surface"
+  ],
+  "steps": [
+    {
+      "title": "Fold and Unfold Diagonally",
+      "text": "Fold your square paper in half diagonally, then unfold. Repeat along the other diagonal so both creases are visible."
+    },
+    {
+      "title": "Fold in Half Both Ways",
+      "text": "Fold the paper in half horizontally and unfold, then vertically and unfold. You should now have four creases crossing in the center."
+    },
+    {
+      "title": "Collapse into a Square Base",
+      "text": "Using the creases as guides, bring the corners together and collapse the paper into a smaller square shape."
+    },
+    {
+      "title": "Fold Up the Sides",
+      "text": "Fold the left and right edges of the top layer inward to the center line, forming a kite shape. Repeat on the back."
+    },
+    {
+      "title": "Petal Fold the Wings",
+      "text": "Lift each flap upward and flatten it into a petal fold to form the crane's wings on both sides."
+    },
+    {
+      "title": "Shape the Head and Tail",
+      "text": "Fold one narrow point down slightly to create the head using a reverse fold, and leave the other as the tail."
+    },
+    {
+      "title": "Your Crane is Complete!",
+      "text": "Gently pull the wings apart and curve them for a finished look. Add a fold to the head for a beak if you'd like."
+    }
+  ],
+  "finishedImage": null,
+  "diagram": null,
+  "tips": [
+    "Line up corners before pressing a crease from the middle outwards.",
+    "Keep the paper facing the same way as the instruction before each fold."
+  ],
+  "commonMistakes": [
+    "If layers do not line up, return to the last clear step rather than forcing the next fold.",
+    "Thick paper becomes difficult to fold as layers build up; try a larger, thinner square."
+  ],
+  "relatedProjects": [
+    {
+      "title": "Origami Penguin",
+      "url": "penguin-tutorial.html"
+    },
+    {
+      "title": "Origami Heart",
+      "url": "heart-tutorial.html"
+    }
+  ],
+  "supplyRecommendations": [
+    {
+      "title": "Choose paper for your project",
+      "url": "blog-best-paper.html"
+    }
+  ],
+  "educationalConnections": [
+    {
+      "title": "Try a classroom folding activity",
+      "url": "origami-for-teachers.html"
+    }
+  ],
+  "printableUrl": null,
+  "videoUrl": null,
+  "review": {
+    "status": "legacy-migrated",
+    "note": "Original instructions preserved from 47ecea9, not newly fold-tested. Before scaling: independently fold-test every step and add owned photographs/diagrams."
+  }
+}

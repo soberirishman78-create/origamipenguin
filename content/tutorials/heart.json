@@ -1,0 +1,77 @@
+{
+  "slug": "heart-tutorial.html",
+  "heading": "Easy Origami Heart",
+  "introduction": "This origami heart is one of the quickest folds on the site, perfect for cards, bookmarks, or a quick handmade gift. All you need is one square sheet of paper, ideally colored on one side.",
+  "difficulty": "Easy",
+  "durationMinutes": 5,
+  "durationNote": "Planning estimate; allow extra time for your first attempt.",
+  "paper": "One square sheet of thin origami paper, about 15 × 15 cm (6 × 6 in).",
+  "materials": [
+    "One square sheet of paper",
+    "A flat folding surface"
+  ],
+  "steps": [
+    {
+      "title": "Fold in Half",
+      "text": "With the colored side down, fold your square in half vertically, then unfold to leave a center crease."
+    },
+    {
+      "title": "Fold the Top Corners Down",
+      "text": "Fold the top two corners down to the center crease, forming a triangle shape at the top."
+    },
+    {
+      "title": "Fold the Bottom Point Up",
+      "text": "Fold the bottom point up to meet the base of the triangle, creating a pentagon-like shape."
+    },
+    {
+      "title": "Round the Top Lobes",
+      "text": "Fold the top two corners inward and slightly downward to round them into the heart's two lobes."
+    },
+    {
+      "title": "Tuck and Flip",
+      "text": "Tuck the bottom point behind the lobes slightly to sharpen the heart's shape, then flip the paper over."
+    },
+    {
+      "title": "Your Heart is Complete!",
+      "text": "Flatten all the creases firmly. Your origami heart is ready to use as a card topper, bookmark, or gift tag."
+    }
+  ],
+  "finishedImage": null,
+  "diagram": null,
+  "tips": [
+    "Line up corners before pressing a crease from the middle outwards.",
+    "Keep the paper facing the same way as the instruction before each fold."
+  ],
+  "commonMistakes": [
+    "If layers do not line up, return to the last clear step rather than forcing the next fold.",
+    "Thick paper becomes difficult to fold as layers build up; try a larger, thinner square."
+  ],
+  "relatedProjects": [
+    {
+      "title": "Origami Penguin",
+      "url": "penguin-tutorial.html"
+    },
+    {
+      "title": "Origami Crane",
+      "url": "crane-tutorial.html"
+    }
+  ],
+  "supplyRecommendations": [
+    {
+      "title": "Choose paper for your project",
+      "url": "blog-best-paper.html"
+    }
+  ],
+  "educationalConnections": [
+    {
+      "title": "Try a classroom folding activity",
+      "url": "origami-for-teachers.html"
+    }
+  ],
+  "printableUrl": null,
+  "videoUrl": null,
+  "review": {
+    "status": "legacy-migrated",
+    "note": "Original instructions preserved from 47ecea9, not newly fold-tested. Before scaling: independently fold-test every step and add owned photographs/diagrams."
+  }
+}

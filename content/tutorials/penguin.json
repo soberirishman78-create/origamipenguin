@@ -1,0 +1,98 @@
+{
+  "slug": "penguin-tutorial.html",
+  "heading": "Simple Origami Penguin for Beginners",
+  "introduction": "Follow the diagram and written steps below to fold your very own origami penguin. All you need is one square sheet of paper — no scissors, no glue!",
+  "difficulty": "Easy",
+  "durationMinutes": 10,
+  "durationNote": "Planning estimate; allow extra time for your first attempt.",
+  "paper": "One square sheet of thin origami paper, about 15 × 15 cm (6 × 6 in).",
+  "materials": [
+    "One square sheet of paper",
+    "A flat folding surface"
+  ],
+  "steps": [
+    {
+      "title": "Start with a Square Sheet",
+      "text": "Use a square piece of origami paper. If your paper is two-toned, start with the darker colour facing down — this will become the penguin's back."
+    },
+    {
+      "title": "Fold in Half Diagonally",
+      "text": "Bring one corner up to meet the opposite corner, forming a triangle. Crease firmly along the fold, then unfold back to a flat square."
+    },
+    {
+      "title": "Unfold",
+      "text": "Open the paper back out flat. You now have a diagonal crease running corner to corner."
+    },
+    {
+      "title": "Fold Both Sides to the Centre Crease",
+      "text": "Fold the left and right corners inward so their edges meet along the diagonal crease in the centre. You should now have a kite shape."
+    },
+    {
+      "title": "Fold the Bottom Point Up",
+      "text": "Take the bottom pointed tip and fold it upward so it meets roughly the centre of the shape. This creates the penguin's white belly area."
+    },
+    {
+      "title": "Fold Up the Smaller Triangle",
+      "text": "Fold the small triangle at the top downward slightly — this will become the penguin's head. Leave a small white strip showing at the top for the face."
+    },
+    {
+      "title": "Fold the Entire Shape in Half",
+      "text": "Fold the whole shape in half vertically (mountain fold), bringing the right side behind the left. The penguin's body shape should now be visible from the side."
+    },
+    {
+      "title": "Fold the Head Back at an Angle",
+      "text": "Rotate the top portion (the head) forward at a slight angle using an inside reverse fold. This gives the penguin its characteristic tilted head and creates the beak."
+    },
+    {
+      "title": "Fold the Base Flaps Down (Wings)",
+      "text": "On each side, fold the bottom corner flaps downward and outward to form the penguin's flippers/wings. Crease well so they hold their shape."
+    },
+    {
+      "title": "Your Penguin is Complete!",
+      "text": "Stand your penguin upright. Give it a gentle squeeze at the base to help it balance. Add a dot with a pen for the eye and your origami penguin is done!"
+    }
+  ],
+  "finishedImage": null,
+  "diagram": {
+    "src": "images/penguin-step-diagram.webp",
+    "alt": "Existing ten-step origami penguin diagram",
+    "width": 1408,
+    "height": 768
+  },
+  "tips": [
+    "Line up corners before pressing a crease from the middle outwards.",
+    "Keep the paper facing the same way as the instruction before each fold."
+  ],
+  "commonMistakes": [
+    "If layers do not line up, return to the last clear step rather than forcing the next fold.",
+    "Thick paper becomes difficult to fold as layers build up; try a larger, thinner square."
+  ],
+  "relatedProjects": [
+    {
+      "title": "Origami Heart",
+      "url": "heart-tutorial.html"
+    },
+    {
+      "title": "Origami Crane",
+      "url": "crane-tutorial.html"
+    }
+  ],
+  "supplyRecommendations": [
+    {
+      "title": "Choose paper for your project",
+      "url": "blog-best-paper.html"
+    }
+  ],
+  "educationalConnections": [
+    {
+      "title": "Try a classroom folding activity",
+      "url": "origami-for-teachers.html"
+    }
+  ],
+  "printableUrl": null,
+  "videoUrl": null,
+  "review": {
+    "status": "legacy-migrated",
+    "note": "Original instructions preserved from 47ecea9, not newly fold-tested. Before scaling: independently fold-test every step and add owned photographs/diagrams."
+  }
+}

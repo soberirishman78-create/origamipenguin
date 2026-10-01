@@ -1,0 +1,13 @@
+name: Validate static site
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check generated output, metadata, links and affiliate preservation
+        run: python3 -m unittest discover -s tests -v

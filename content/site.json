@@ -1,0 +1,550 @@
+[
+  {
+    "slug": "404.html",
+    "title": "Page Not Found | OrigamiPenguin.com",
+    "description": "",
+    "nav": "blog",
+    "noindex": true,
+    "styles": "",
+    "schema": [],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "about.html",
+    "title": "About OrigamiPenguin.com | Free Origami Tutorials",
+    "description": "Learn about OrigamiPenguin.com, a free resource for origami tutorials, guides, and hand-picked supply recommendations.",
+    "nav": "about",
+    "noindex": false,
+    "styles": "",
+    "schema": [],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "affiliate-disclosure.html",
+    "title": "Affiliate Disclosure | OrigamiPenguin.com",
+    "description": "How affiliate links work on OrigamiPenguin.com, including our participation in the Amazon Services LLC Associates Program.",
+    "nav": "blog",
+    "noindex": true,
+    "styles": "",
+    "schema": [],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "blog-best-paper.html",
+    "title": "Best Origami Paper Compared | OrigamiPenguin.com",
+    "description": "We compare popular origami paper packs and kits to help you pick the right one for your skill level and project.",
+    "nav": "supplies",
+    "noindex": false,
+    "styles": "",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Best Origami Paper Compared: Which Should You Buy?",
+        "description": "We compare popular origami paper packs and kits to help you pick the right one for your skill level and project.",
+        "datePublished": "2026-07-23",
+        "author": {
+          "@type": "Organization",
+          "name": "Origami Penguin",
+          "url": "https://origamipenguin.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Origami Penguin",
+          "url": "https://origamipenguin.com/"
+        },
+        "mainEntityOfPage": "https://origamipenguin.com/blog-best-paper.html"
+      }
+    ],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "blog-folding-tips.html",
+    "title": "10 Tips for Crisp, Professional Origami Folds | OrigamiPenguin.com",
+    "description": "Practical tips to get sharper creases and cleaner results on every origami project.",
+    "nav": "blog",
+    "noindex": false,
+    "styles": "",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "10 Tips for Crisp, Professional Origami Folds",
+        "description": "Practical tips to get sharper creases and cleaner results on every origami project.",
+        "datePublished": "2026-07-23",
+        "author": {
+          "@type": "Organization",
+          "name": "Origami Penguin",
+          "url": "https://origamipenguin.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Origami Penguin",
+          "url": "https://origamipenguin.com/"
+        },
+        "mainEntityOfPage": "https://origamipenguin.com/blog-folding-tips.html"
+      }
+    ],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "blog-history.html",
+    "title": "A Brief History of Origami | OrigamiPenguin.com",
+    "description": "A short history of origami, from its origins in Japan to the global art form it is today.",
+    "nav": "blog",
+    "noindex": false,
+    "styles": "",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "A Brief History of Origami",
+        "description": "A short history of origami, from its origins in Japan to the global art form it is today.",
+        "datePublished": "2026-07-23",
+        "author": {
+          "@type": "Organization",
+          "name": "Origami Penguin",
+          "url": "https://origamipenguin.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Origami Penguin",
+          "url": "https://origamipenguin.com/"
+        },
+        "mainEntityOfPage": "https://origamipenguin.com/blog-history.html"
+      }
+    ],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "blog.html",
+    "title": "Origami Blog | Tips, History & Buying Guides",
+    "description": "Origami tips, history, and buying guides from OrigamiPenguin.com.",
+    "nav": "blog",
+    "noindex": false,
+    "styles": "",
+    "schema": [],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "crane-tutorial.html",
+    "title": "How to Fold an Origami Crane | Step-by-Step Tutorial",
+    "description": "Learn how to fold the classic origami crane with easy step-by-step instructions for beginners.",
+    "nav": "tutorials",
+    "noindex": false,
+    "styles": "",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Fold an Origami Crane",
+        "description": "Fold the classic origami crane in 7 steps using one square sheet of paper.",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "One square sheet of origami paper"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Fold and unfold diagonally",
+            "text": "Fold your square paper in half diagonally, then unfold. Repeat along the other diagonal so both creases are visible."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold in half both ways",
+            "text": "Fold the paper in half horizontally and unfold, then vertically and unfold, leaving four creases crossing in the center."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Collapse into a square base",
+            "text": "Using the creases as guides, bring the corners together and collapse the paper into a smaller square shape."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold up the sides",
+            "text": "Fold the left and right edges of the top layer inward to the center line, forming a kite shape. Repeat on the back."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Petal fold the wings",
+            "text": "Lift each flap upward and flatten it into a petal fold to form the crane's wings on both sides."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Shape the head and tail",
+            "text": "Fold one narrow point down slightly to create the head using a reverse fold, and leave the other as the tail."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Finish",
+            "text": "Gently pull the wings apart and curve them for a finished look."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://origamipenguin.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tutorials",
+            "item": "https://origamipenguin.com/tutorials.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Origami Crane"
+          }
+        ]
+      }
+    ],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "guide.html",
+    "title": "Origami Beginner's Guide: Paper, Terms & Symbols | OrigamiPenguin.com",
+    "description": "A complete beginner's guide to origami: how to choose paper, key folding terms and symbols, and common mistakes to avoid.",
+    "nav": "guide",
+    "noindex": false,
+    "styles": "",
+    "schema": [],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "heart-tutorial.html",
+    "title": "How to Fold an Origami Heart | Easy Step-by-Step Tutorial",
+    "description": "A quick, easy origami heart tutorial, perfect for cards, gifts, and bookmarks.",
+    "nav": "tutorials",
+    "noindex": false,
+    "styles": "",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Fold an Origami Heart",
+        "description": "Fold an easy origami heart in 6 steps using one square sheet of paper.",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "One square sheet of origami paper, colored on one side"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Fold in half",
+            "text": "With the colored side down, fold your square in half vertically, then unfold to leave a center crease."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold the top corners down",
+            "text": "Fold the top two corners down to the center crease, forming a triangle shape at the top."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold the bottom point up",
+            "text": "Fold the bottom point up to meet the base of the triangle, creating a pentagon-like shape."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Round the top lobes",
+            "text": "Fold the top two corners inward and slightly downward to round them into the heart's two lobes."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tuck and flip",
+            "text": "Tuck the bottom point behind the lobes slightly to sharpen the heart's shape, then flip the paper over."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Finish",
+            "text": "Flatten all the creases firmly. Your origami heart is ready to use as a card topper, bookmark, or gift tag."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://origamipenguin.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tutorials",
+            "item": "https://origamipenguin.com/tutorials.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Origami Heart"
+          }
+        ]
+      }
+    ],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "index.html",
+    "title": "Origami Penguin | Free Origami Tutorials & Step-by-Step Guides",
+    "description": "Learn origami with easy step-by-step tutorials, free diagrams, and recommended supplies. Start folding penguins, cranes, hearts & more today!",
+    "nav": "home",
+    "noindex": false,
+    "styles": "",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Origami Penguin",
+        "url": "https://origamipenguin.com/",
+        "description": "Free step-by-step origami tutorials, beginner guides, and recommended paper-folding supplies."
+      }
+    ],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "origami-paper-for-kids.html",
+    "title": "Best Origami Paper for Kids & Classrooms | OrigamiPenguin.com",
+    "description": "How to choose origami paper for kids and classrooms: the right sheet size for small hands, bulk packs for class sets, and kits that include instructions. Honest picks, no fluff.",
+    "nav": "supplies",
+    "noindex": false,
+    "styles": "\n  .affiliate-notice { background: #f0f4f8; border-left: 4px solid #3498db; padding: 12px 16px; font-size: 0.82em; color: #555; border-radius: 0 6px 6px 0; margin-bottom: 30px; }\n  .btn-amazon { display: inline-block; background: #ff9900; color: #fff; text-align: center; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9em; margin-top: 10px; }\n  .btn-amazon:hover { background: #e68a00; }\n",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Best Origami Paper for Kids & Classrooms",
+        "description": "How to choose origami paper for kids and classrooms: the right sheet size for small hands, bulk packs for class sets, and kits that include instructions.",
+        "datePublished": "2026-08-19",
+        "author": {
+          "@type": "Organization",
+          "name": "Origami Penguin",
+          "url": "https://origamipenguin.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Origami Penguin",
+          "url": "https://origamipenguin.com/"
+        },
+        "mainEntityOfPage": "https://origamipenguin.com/origami-paper-for-kids.html"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://origamipenguin.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Supplies",
+            "item": "https://origamipenguin.com/supplies.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Origami Paper for Kids"
+          }
+        ]
+      }
+    ],
+    "scripts": [
+      "js/outbound.js"
+    ],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "penguin-tutorial.html",
+    "title": "How to Make an Origami Penguin | Step-by-Step Tutorial",
+    "description": "Fold an easy origami penguin in 10 steps with our free diagram and written instructions. A beginner-friendly project that needs just one square of paper.",
+    "nav": "tutorials",
+    "noindex": false,
+    "styles": "",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Make an Origami Penguin",
+        "description": "Fold an easy origami penguin in 10 steps using one square sheet of paper. No scissors or glue required.",
+        "image": "https://origamipenguin.com/images/penguin-step-diagram.jpg",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "One square sheet of origami paper"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Start with a square sheet",
+            "text": "Use a square piece of origami paper. If your paper is two-toned, start with the darker colour facing down — this will become the penguin's back."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold in half diagonally",
+            "text": "Bring one corner up to meet the opposite corner, forming a triangle. Crease firmly along the fold, then unfold back to a flat square."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Unfold",
+            "text": "Open the paper back out flat. You now have a diagonal crease running corner to corner."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold both sides to the centre crease",
+            "text": "Fold the left and right corners inward so their edges meet along the diagonal crease in the centre, forming a kite shape."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold the bottom point up",
+            "text": "Take the bottom pointed tip and fold it upward so it meets roughly the centre of the shape."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold up the smaller triangle",
+            "text": "Fold the small triangle at the top downward slightly to form the penguin's head, leaving a small strip showing for the face."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold the entire shape in half",
+            "text": "Fold the whole shape in half vertically (mountain fold), bringing the right side behind the left."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold the head back at an angle",
+            "text": "Rotate the head forward at a slight angle using an inside reverse fold to create the beak."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Fold the base flaps down",
+            "text": "On each side, fold the bottom corner flaps downward and outward to form the penguin's flippers."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Finish",
+            "text": "Stand your penguin upright, adjust the base so it balances, and add a dot for the eye."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://origamipenguin.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tutorials",
+            "item": "https://origamipenguin.com/tutorials.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Origami Penguin"
+          }
+        ]
+      }
+    ],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/penguin-step-diagram.jpg"
+  },
+  {
+    "slug": "privacy.html",
+    "title": "Privacy Policy | OrigamiPenguin.com",
+    "description": "The privacy policy for OrigamiPenguin.com: what data this site does and does not collect.",
+    "nav": "blog",
+    "noindex": true,
+    "styles": "",
+    "schema": [],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "supplies.html",
+    "title": "Best Origami Books & Starter Kits | OrigamiPenguin.com",
+    "description": "Our hand-picked origami books, starter kits, and paper packs on Amazon — organized by skill level so beginners, kids, and hobbyists can find the right supplies fast.",
+    "nav": "supplies",
+    "noindex": false,
+    "styles": "\n    .section-title { font-size: 1.6em; color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 8px; margin: 40px 0 20px; }\n    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-bottom: 40px; }\n    .product-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.09); padding: 20px; display: flex; flex-direction: column; }\n    .product-card h3 { font-size: 1em; color: #2c3e50; margin: 0 0 8px; line-height: 1.4; }\n    .product-card .fit { color: #2c7bb6; font-size: 0.85em; font-weight: 600; margin-bottom: 10px; }\n    .product-card p { font-size: 0.88em; color: #555; flex-grow: 1; margin-bottom: 14px; }\n    .btn-amazon { display: block; background: #ff9900; color: #fff; text-align: center; padding: 10px 14px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9em; margin-top: auto; }\n    .btn-amazon:hover { background: #e68a00; }\n    .affiliate-notice { background: #f0f4f8; border-left: 4px solid #3498db; padding: 12px 16px; font-size: 0.82em; color: #555; border-radius: 0 6px 6px 0; margin-bottom: 30px; }\n  ",
+    "schema": [],
+    "scripts": [
+      "js/outbound.js"
+    ],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  },
+  {
+    "slug": "tutorials.html",
+    "title": "Origami Tutorials | Free Step-by-Step Folding Guides",
+    "description": "Browse every free origami tutorial on OrigamiPenguin.com — beginner-friendly step-by-step guides including the penguin, crane, and heart. New folds added regularly.",
+    "nav": "tutorials",
+    "noindex": false,
+    "styles": "",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Origami Tutorials",
+        "description": "Every free step-by-step origami tutorial on OrigamiPenguin.com.",
+        "url": "https://origamipenguin.com/tutorials.html",
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Origami Penguin",
+              "url": "https://origamipenguin.com/penguin-tutorial.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Origami Crane",
+              "url": "https://origamipenguin.com/crane-tutorial.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Origami Heart",
+              "url": "https://origamipenguin.com/heart-tutorial.html"
+            }
+          ]
+        }
+      }
+    ],
+    "scripts": [],
+    "image": "https://origamipenguin.com/images/og-default.png"
+  }
+]
