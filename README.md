@@ -30,3 +30,7 @@ Commit both content/template changes and generated output. `python3 scripts/buil
 For a faithful local preview, use a static server that resolves extensionless URLs to their `.html` files. Production verification must include the actual custom domain, not just a successful build status.
 
 See [development and editorial notes](docs/content-system.md), [rollback](docs/rollback.md) and [classroom/product guidelines](docs/classroom-editorial.md).
+
+## First implementation phase
+
+See the [deployment report and next actions](docs/phase-one-report.md).
