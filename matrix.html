@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matrix Code Rain | Origami Penguin</title>
+<meta name="description" content="An endless green-on-black digital code rain animation with a seamless sixty-second loop.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://origamipenguin.com/matrix">
+<meta property="og:url" content="https://origamipenguin.com/matrix">
+<meta property="og:image" content="https://origamipenguin.com/images/og-default.png">
+<meta name="theme-color" content="#000000">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
+main,canvas{display:block;width:100%;height:100%;height:100dvh}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip:focus{clip:auto;width:auto;height:auto;top:12px;left:12px;margin:0;padding:12px;background:#000;color:#7aff93;z-index:2}
+canvas{position:absolute;inset:0}
+</style>
+</head>
+<body>
+<nav class="sr-only" aria-label="Main navigation"><a class="skip" href="#main">Skip to animation</a></nav>
+<main id="main" tabindex="-1">
+<h1 class="sr-only">Matrix code rain</h1>
+<canvas aria-hidden="true"></canvas>
+<p class="sr-only">Decorative green computer characters falling on a black background in a repeating sixty-second loop. No interaction required.</p>
+</main>
+<script>
+'use strict';
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');
+const PERIOD=60000,STEP=20,GLYPHS='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$#+=*<>:{}[]/アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ';
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+let width=0,height=0,columns=[],start=performance.now(),request=0;
+function hash(n){n=Math.imul(n^(n>>>16),0x45d9f3b);n=Math.imul(n^(n>>>16),0x45d9f3b);return (n^(n>>>16))>>>0}
+function resize(){
+ width=innerWidth;height=innerHeight;
+ const scale=Math.min(devicePixelRatio||1,2);
+ canvas.width=Math.round(width*scale);canvas.height=Math.round(height*scale);
+ ctx.setTransform(scale,0,0,scale,0,0);
+ columns=Array.from({length:Math.ceil(width/STEP)},(_,i)=>({
+  offset:hash(i*31+13)/4294967296,
+  cycles:2+hash(i*17+11)%4,
+  tail:12+hash(i*23+3)%25,
+  brightness:.55+(hash(i*43+9)%45)/100
+ }));
+ draw(reduced.matches?0:(performance.now()-start)%PERIOD);
+}
+function draw(elapsed){
+ const phase=((elapsed%PERIOD)+PERIOD)%PERIOD/PERIOD;
+ ctx.fillStyle='#000';ctx.fillRect(0,0,width,height);
+ ctx.font='bold 17px "Courier New",Consolas,monospace';ctx.textAlign='center';ctx.textBaseline='top';
+ const visibleRows=Math.ceil(height/STEP),tick=Math.floor(phase*480);
+ for(let col=0;col<columns.length;col++){
+  const stream=columns[col],ring=visibleRows+stream.tail+4;
+  const head=(stream.offset*ring+phase*ring*stream.cycles)%ring;
+  for(let trail=0;trail<stream.tail;trail++){
+   let row=(head-trail+ring)%ring;
+   if(row>visibleRows+1)continue;
+   const intensity=Math.pow(1-trail/stream.tail,1.65)*stream.brightness;
+   const y=row*STEP-STEP,x=col*STEP+STEP/2;
+   const glyph=GLYPHS[hash(col*92821+trail*68917+tick*127)%GLYPHS.length];
+   if(trail===0){ctx.fillStyle='#c9ffd5';ctx.shadowColor='#43ff70';ctx.shadowBlur=10}
+   else{ctx.fillStyle='rgba(0,'+Math.round(100+155*intensity)+',38,'+(.12+.85*intensity)+')';ctx.shadowColor='#00f540';ctx.shadowBlur=trail<4?5:0}
+   ctx.fillText(glyph,x,y);
+  }
+ }
+ ctx.shadowBlur=0;
+ // A faint CRT scanline texture, with no strobing or flashing.
+ ctx.fillStyle='rgba(0,0,0,.16)';for(let y=1;y<height;y+=3)ctx.fillRect(0,y,width,1);
+}
+function frame(now){draw(reduced.matches?0:(now-start)%PERIOD);if(!reduced.matches&&!document.hidden)request=requestAnimationFrame(frame)}
+function resume(){cancelAnimationFrame(request);if(!document.hidden){draw(reduced.matches?0:(performance.now()-start)%PERIOD);if(!reduced.matches)request=requestAnimationFrame(frame)}}
+addEventListener('resize',resize);document.addEventListener('visibilitychange',resume);reduced.addEventListener('change',resume);
+resize();resume();
+</script>
+</body>
+</html>
