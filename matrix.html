@@ -57,65 +57,23 @@ function draw(elapsed){
    if(row>visibleRows+1)continue;
    const intensity=Math.pow(1-trail/stream.tail,1.65)*stream.brightness;
    const y=row*STEP-STEP,x=col*STEP+STEP/2;
-   const glyph=GLYPHS[hash(col*92821+trail*68917+tick*127)%GLYPHS.length];
+   // Briefly weave the affirmation into an ordinary falling stream.
+   // The leading letter sits above the rest, so it reads top to bottom.
+   const phrase='MONEYFLOWSTOME';
+   const scene=Math.floor(phase*6),within=(phase*6)%1;
+   const chosen=hash(scene*719+41)%columns.length;
+   const embedded=col===chosen&&within>.22&&within<.78&&trail<phrase.length;
+   const glyph=embedded?phrase[phrase.length-1-trail]:GLYPHS[hash(col*92821+trail*68917+tick*127)%GLYPHS.length];
    if(trail===0){ctx.fillStyle='#c9ffd5';ctx.shadowColor='#43ff70';ctx.shadowBlur=10}
    else{ctx.fillStyle='rgba(0,'+Math.round(100+155*intensity)+',38,'+(.12+.85*intensity)+')';ctx.shadowColor='#00f540';ctx.shadowBlur=trail<4?5:0}
    ctx.fillText(glyph,x,y);
   }
  }
  ctx.shadowBlur=0;
- drawWoman(phase*60);drawMoney(phase*60);
  // A faint CRT scanline texture, with no strobing or flashing.
  ctx.fillStyle='rgba(0,0,0,.16)';for(let y=1;y<height;y+=3)ctx.fillRect(0,y,width,1);
 }
 
-function apparition(t,from,to){
- const fade=.9;
- return Math.max(0,Math.min(1,(t-from)/fade,(to-t)/fade));
-}
-function drawWoman(t){
- const alpha=apparition(t,12,19);if(!alpha)return;
- const scale=Math.min(height/510,width/300,1.4);
- ctx.save();ctx.translate(width*.53+Math.sin((t-12)*.55)*12,height*.5);
- ctx.scale(scale,scale);ctx.globalAlpha=alpha;ctx.shadowColor='#29ff67';ctx.shadowBlur=18;
- ctx.fillStyle='rgba(0,45,12,.65)';
- // Head, swept hair, fitted dress, arms and heels form a code-filled silhouette.
- const shape=new Path2D();
- shape.ellipse(0,-160,18,24,0,0,Math.PI*2);
- shape.moveTo(-17,-174);shape.bezierCurveTo(-39,-149,-26,-111,-12,-108);
- shape.lineTo(12,-108);shape.bezierCurveTo(34,-126,27,-167,13,-181);shape.closePath();
- shape.moveTo(-8,-137);shape.lineTo(-10,-120);shape.lineTo(-32,-110);
- shape.lineTo(-51,-53);shape.lineTo(-47,-10);shape.lineTo(-39,-12);
- shape.lineTo(-39,-51);shape.lineTo(-23,-85);shape.lineTo(-17,-46);
- shape.bezierCurveTo(-26,-10,-45,33,-65,74);
- shape.quadraticCurveTo(0,100,66,74);
- shape.bezierCurveTo(44,33,25,-10,17,-46);
- shape.lineTo(23,-85);shape.lineTo(38,-51);shape.lineTo(40,-9);shape.lineTo(49,-7);
- shape.lineTo(50,-54);shape.lineTo(32,-110);shape.lineTo(10,-120);shape.lineTo(8,-137);shape.closePath();
- shape.moveTo(-28,83);shape.lineTo(-22,155);shape.lineTo(-34,176);shape.lineTo(-12,176);
- shape.lineTo(-7,151);shape.lineTo(-5,89);shape.closePath();
- shape.moveTo(10,89);shape.lineTo(17,150);shape.lineTo(9,173);shape.lineTo(33,173);
- shape.lineTo(30,152);shape.lineTo(32,84);shape.closePath();
- ctx.fill(shape);ctx.clip(shape);ctx.shadowBlur=5;
- ctx.font='bold 13px "Courier New",monospace';ctx.textAlign='center';ctx.textBaseline='top';
- for(let y=-190;y<185;y+=14)for(let x=-70;x<75;x+=12){
- ctx.fillStyle=(hash(x*89+y*13+Math.floor(t*8))%5===0)?'#a1ffb7':'#29ff67';
- ctx.fillText(GLYPHS[hash(x*913+y*71+Math.floor(t*8)*97)%GLYPHS.length],x,y);
- }
- ctx.restore();
-}
-function drawMoney(t){
- const alpha=apparition(t,32,41);if(!alpha)return;
- ctx.save();ctx.globalAlpha=alpha;ctx.textAlign='center';ctx.textBaseline='middle';
- const fontSize=Math.min(36,(width-34)/11);
- ctx.font='bold '+fontSize+'px "Courier New",monospace';
- const y=height*.5;ctx.fillStyle='rgba(0,0,0,.84)';ctx.fillRect(0,y-fontSize*2,width,fontSize*4);
- ctx.shadowColor='#29ff67';ctx.shadowBlur=16;ctx.fillStyle='#a1ffb7';
- ctx.fillText('Money flows to me',width/2,y);
- ctx.font='bold '+Math.max(16,fontSize*.7)+'px "Courier New",monospace';ctx.fillStyle='#20e866';
- ctx.fillText('$  $  $  $  $',width/2,y+fontSize*1.4);
- ctx.fillText('$  $  $  $  $',width/2,y-fontSize*1.4);ctx.restore();
-}
 function frame(now){draw((now-start)%PERIOD);if(!document.hidden)request=requestAnimationFrame(frame)}
 function resume(){cancelAnimationFrame(request);if(!document.hidden){draw((performance.now()-start)%PERIOD);request=requestAnimationFrame(frame)}}
 addEventListener('resize',resize);document.addEventListener('visibilitychange',resume);
