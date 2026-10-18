@@ -23,7 +23,7 @@ canvas{position:absolute;inset:0}
 <main id="main" tabindex="-1">
 <h1 class="sr-only">Matrix code rain</h1>
 <canvas aria-hidden="true"></canvas>
-<p class="sr-only">Decorative green computer characters falling on a black background in a repeating sixty-second loop. A woman in a red dress briefly appears, followed by “Money flows to me” with dollar signs. No interaction required.</p>
+<p class="sr-only">Decorative green computer characters falling on a black background in a repeating sixty-second loop. A woman-shaped silhouette formed from green Matrix code briefly appears, followed by “Money flows to me” with dollar signs. No interaction required.</p>
 </main>
 <script>
 'use strict';
@@ -77,8 +77,8 @@ function drawWoman(t){
  const alpha=apparition(t,12,19);if(!alpha)return;
  const scale=Math.min(height/510,width/300,1.4);
  ctx.save();ctx.translate(width*.53+Math.sin((t-12)*.55)*12,height*.5);
- ctx.scale(scale,scale);ctx.globalAlpha=alpha;ctx.shadowColor='#ff1744';ctx.shadowBlur=18;
- ctx.fillStyle='rgba(90,0,18,.85)';
+ ctx.scale(scale,scale);ctx.globalAlpha=alpha;ctx.shadowColor='#29ff67';ctx.shadowBlur=18;
+ ctx.fillStyle='rgba(0,45,12,.65)';
  // Head, swept hair, fitted dress, arms and heels form a code-filled silhouette.
  const shape=new Path2D();
  shape.ellipse(0,-160,18,24,0,0,Math.PI*2);
@@ -99,7 +99,7 @@ function drawWoman(t){
  ctx.fill(shape);ctx.clip(shape);ctx.shadowBlur=5;
  ctx.font='bold 13px "Courier New",monospace';ctx.textAlign='center';ctx.textBaseline='top';
  for(let y=-190;y<185;y+=14)for(let x=-70;x<75;x+=12){
- ctx.fillStyle=(hash(x*89+y*13+Math.floor(t*8))%5===0)?'#ffb1bb':'#ff1744';
+ ctx.fillStyle=(hash(x*89+y*13+Math.floor(t*8))%5===0)?'#a1ffb7':'#29ff67';
  ctx.fillText(GLYPHS[hash(x*913+y*71+Math.floor(t*8)*97)%GLYPHS.length],x,y);
  }
  ctx.restore();
