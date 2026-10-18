@@ -113,7 +113,10 @@ function drawMoney(t){
  ctx.shadowColor='#29ff67';ctx.shadowBlur=16;ctx.fillStyle='#a1ffb7';
  ctx.fillText('Money flows to me',width/2,y);
  ctx.font='bold '+Math.max(16,fontSize*.7)+'px "Courier New",monospace';ctx.fillStyle='#20e866';
- ctx.fillText('$  $  $  $  {draw((now-start)%PERIOD);if(!document.hidden)request=requestAnimationFrame(frame)}
+ ctx.fillText('$  $  $  $  $',width/2,y+fontSize*1.4);
+ ctx.fillText('$  $  $  $  $',width/2,y-fontSize*1.4);ctx.restore();
+}
+function frame(now){draw((now-start)%PERIOD);if(!document.hidden)request=requestAnimationFrame(frame)}
 function resume(){cancelAnimationFrame(request);if(!document.hidden){draw((performance.now()-start)%PERIOD);request=requestAnimationFrame(frame)}}
 addEventListener('resize',resize);document.addEventListener('visibilitychange',resume);
 resize();resume();
