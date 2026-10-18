@@ -123,21 +123,3 @@ resize();resume();
 </script>
 </body>
 </html>
-,width/2,y+fontSize*1.4);
- ctx.fillText('$  $  $  $  {draw((now-start)%PERIOD);if(!document.hidden)request=requestAnimationFrame(frame)}
-function resume(){cancelAnimationFrame(request);if(!document.hidden){draw((performance.now()-start)%PERIOD);request=requestAnimationFrame(frame)}}
-addEventListener('resize',resize);document.addEventListener('visibilitychange',resume);
-resize();resume();
-</script>
-</body>
-</html>
-,width/2,y-fontSize*1.4);ctx.restore();
-}
-
-function frame(now){draw((now-start)%PERIOD);if(!document.hidden)request=requestAnimationFrame(frame)}
-function resume(){cancelAnimationFrame(request);if(!document.hidden){draw((performance.now()-start)%PERIOD);request=requestAnimationFrame(frame)}}
-addEventListener('resize',resize);document.addEventListener('visibilitychange',resume);
-resize();resume();
-</script>
-</body>
-</html>
