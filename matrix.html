@@ -29,7 +29,6 @@ canvas{position:absolute;inset:0}
 'use strict';
 const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');
 const PERIOD=60000,STEP=20,GLYPHS='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$#+=*<>:{}[]/アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ';
-const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let width=0,height=0,columns=[],start=performance.now(),request=0;
 function hash(n){n=Math.imul(n^(n>>>16),0x45d9f3b);n=Math.imul(n^(n>>>16),0x45d9f3b);return (n^(n>>>16))>>>0}
 function resize(){
@@ -43,7 +42,7 @@ function resize(){
   tail:12+hash(i*23+3)%25,
   brightness:.55+(hash(i*43+9)%45)/100
  }));
- draw(reduced.matches?0:(performance.now()-start)%PERIOD);
+ draw((performance.now()-start)%PERIOD);
 }
 function draw(elapsed){
  const phase=((elapsed%PERIOD)+PERIOD)%PERIOD/PERIOD;
@@ -68,9 +67,9 @@ function draw(elapsed){
  // A faint CRT scanline texture, with no strobing or flashing.
  ctx.fillStyle='rgba(0,0,0,.16)';for(let y=1;y<height;y+=3)ctx.fillRect(0,y,width,1);
 }
-function frame(now){draw(reduced.matches?0:(now-start)%PERIOD);if(!reduced.matches&&!document.hidden)request=requestAnimationFrame(frame)}
-function resume(){cancelAnimationFrame(request);if(!document.hidden){draw(reduced.matches?0:(performance.now()-start)%PERIOD);if(!reduced.matches)request=requestAnimationFrame(frame)}}
-addEventListener('resize',resize);document.addEventListener('visibilitychange',resume);reduced.addEventListener('change',resume);
+function frame(now){draw((now-start)%PERIOD);if(!document.hidden)request=requestAnimationFrame(frame)}
+function resume(){cancelAnimationFrame(request);if(!document.hidden){draw((performance.now()-start)%PERIOD);request=requestAnimationFrame(frame)}}
+addEventListener('resize',resize);document.addEventListener('visibilitychange',resume);
 resize();resume();
 </script>
 </body>
