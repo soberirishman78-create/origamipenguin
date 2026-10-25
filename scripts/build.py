@@ -32,18 +32,21 @@ def crumbs(items):
     return '<p class="breadcrumbs" aria-label="Breadcrumb">' + ' <span aria-hidden="true">›</span> '.join(f'<a href="{esc(i["url"])}">{esc(i["name"])}</a>' if i.get('url') else esc(i['name']) for i in items) + '</p>'
 
 def tutorial_body(t):
+    under_review = t.get('review', {}).get('status') != 'fold-tested'
     body = crumbs([{'name':'Home','url':'/'},{'name':'Tutorials','url':'/tutorials.html'},{'name':t['heading']}])
     body += f'<h1>{esc(t["heading"])}</h1><p class="intro">{esc(t["introduction"])}</p>'
-    if t.get('review', {}).get('status') == 'needs-review':
-        body += '<aside class="step" aria-labelledby="review-heading"><h2 id="review-heading">Tutorial under review</h2><p>' + esc(t['review']['publicNote']) + '</p></aside>'
-    body += f'<dl class="project-facts"><div><dt>Difficulty</dt><dd>{esc(t["difficulty"])}</dd></div><div><dt>Allow about</dt><dd>{t["durationMinutes"]} minutes</dd></div><div><dt>Recommended paper</dt><dd>{esc(t["paper"])}</dd></div></dl><p class="small">{esc(t["durationNote"])}</p>'
-    body += '<div class="tutorial-actions"><a class="btn" href="#instructions">Jump to instructions</a><a href="#print-guide">Print / save as PDF</a></div>'
+    if under_review:
+        body += '<aside class="step" aria-labelledby="review-heading"><h2 id="review-heading">Tutorial under review</h2><p>' + esc(t['review']['publicNote']) + '</p><p>For a first attempt, use the <a href="/guide.html#illustrated-resources">illustrated learning resources in our beginner\'s guide</a>. These are separate tutorials, not corrections to the steps below.</p></aside>'
+    else:
+        body += f'<dl class="project-facts"><div><dt>Difficulty</dt><dd>{esc(t["difficulty"])}</dd></div><div><dt>Allow about</dt><dd>{t["durationMinutes"]} minutes</dd></div><div><dt>Recommended paper</dt><dd>{esc(t["paper"])}</dd></div></dl><p class="small">{esc(t["durationNote"])}</p>'
+    action = 'View existing steps (unverified)' if under_review else 'Jump to instructions'
+    body += f'<div class="tutorial-actions"><a class="btn" href="#instructions">{action}</a><a href="#print-guide">Print / save as PDF</a></div>'
     body += '<h2>Materials</h2><ul>' + ''.join(f'<li>{esc(i)}</li>' for i in t['materials']) + '</ul><p>No scissors or glue needed. New to folding? <a href="/guide.html">Read the beginner’s guide</a>.</p>'
     for key in ['finishedImage','diagram']:
         image=t.get(key)
         if image:
             body += f'<figure class="diagram-section"><img src="/{esc(image["src"])}" alt="{esc(image["alt"])}" width="{int(image["width"])}" height="{int(image["height"])}" decoding="async"><figcaption>{esc(image["alt"])}</figcaption></figure>'
-    body += '<h2 id="instructions">Step-by-step instructions</h2><ol class="steps">'
+    body += '<h2 id="instructions">' + ('Existing steps — unverified' if under_review else 'Step-by-step instructions') + '</h2><ol class="steps">'
     for n, step in enumerate(t['steps'],1):
         body += f'<li class="step" id="step-{n}"><h3>{esc(step["title"])}</h3><p>{esc(step["text"])}</p>'
         if step.get('image'):
@@ -85,7 +88,7 @@ def build():
             howto={'@context':'https://schema.org','@type':'HowTo','name':t['heading'],'description':p['description'],'totalTime':f'PT{t["durationMinutes"]}M','supply':[{'@type':'HowToSupply','name':t['paper']}],'step':[{'@type':'HowToStep','name':i['title'],'text':i['text'],'url':url(name)+f'#step-{n}'} for n,i in enumerate(t['steps'],1)]}
             if t.get('finishedImage'):howto['image']=ORIGIN+'/'+t['finishedImage']['src']
             schemas=[s for s in schemas if s.get('@type')!='HowTo']
-            if t.get('review', {}).get('status') != 'needs-review':
+            if t.get('review', {}).get('status') == 'fold-tested':
                 schemas.append(howto)
         elif 'body' in p:
             body=crumbs(p.get('breadcrumbs',[]))+f'<h1>{esc(p["heading"])}</h1>'+p['body']

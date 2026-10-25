@@ -96,6 +96,20 @@ class SiteTests(unittest.TestCase):
                     if a.get('target')=='_blank':self.assertIn('noopener',a.get('rel','').split())
             if urls:current[name]=dict(collections.Counter(urls))
         self.assertEqual(current,expected)
+    def test_unverified_tutorials_offer_a_useful_exit(self):
+        for model in ['penguin','heart','crane']:
+            name=model+'-tutorial.html'; text=self.files[name]; page=self.pages[name]
+            with self.subTest(page=name):
+                self.assertTrue(page.find('h2',id='review-heading'))
+                self.assertTrue(page.find('a',href='/guide#illustrated-resources'))
+                self.assertLess(text.index('id="review-heading"'),text.index('id="instructions"'))
+                self.assertNotIn('"@type": "HowTo"',text)
+                self.assertNotIn('<dt>Difficulty</dt>',text)
+                self.assertIn('under review',text.lower())
+        for name in ['supplies.html','tutorials.html']:
+            self.assertTrue(self.pages[name].find('a',href='/guide#illustrated-resources'))
+        for destination in ['heart','crane','beginners-guide']:
+            self.assertTrue(self.pages['guide.html'].find('a',href='https://origami.me/'+destination+'/'))
     def test_assets_and_no_tracking_additions(self):
         for name,p in self.pages.items():
             for tag in ['script','img','link']:

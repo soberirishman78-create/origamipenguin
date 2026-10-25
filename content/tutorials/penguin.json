@@ -1,7 +1,7 @@
 {
   "slug": "penguin-tutorial.html",
-  "heading": "Simple Origami Penguin for Beginners",
-  "introduction": "This page contains our existing penguin diagram and written instructions. Please read the review note before starting.",
+  "heading": "Origami Penguin — Tutorial Under Review",
+  "introduction": "Our existing penguin instructions are preserved below for reference. Read the review note before choosing a project.",
   "difficulty": "Easy",
   "durationMinutes": 10,
   "durationNote": "Planning estimate; allow extra time for your first attempt.",
@@ -69,11 +69,11 @@
   ],
   "relatedProjects": [
     {
-      "title": "Origami Heart",
+      "title": "Origami Heart (under review)",
       "url": "heart-tutorial.html"
     },
     {
-      "title": "Origami Crane",
+      "title": "Origami Crane (under review)",
       "url": "crane-tutorial.html"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "slug": "heart-tutorial.html",
-  "heading": "Easy Origami Heart",
-  "introduction": "This origami heart is one of the quickest folds on the site, perfect for cards, bookmarks, or a quick handmade gift. All you need is one square sheet of paper, ideally colored on one side.",
+  "heading": "Origami Heart — Tutorial Under Review",
+  "introduction": "Our existing heart instructions are preserved below for reference. Read the review note before choosing a project.",
   "difficulty": "Easy",
   "durationMinutes": 5,
   "durationNote": "Planning estimate; allow extra time for your first attempt.",
@@ -52,7 +52,7 @@
       "url": "penguin-tutorial.html"
     },
     {
-      "title": "Origami Crane",
+      "title": "Origami Crane (under review)",
       "url": "crane-tutorial.html"
     }
   ],
@@ -71,7 +71,9 @@
   "printableUrl": null,
   "videoUrl": null,
   "review": {
-    "status": "legacy-migrated",
-    "note": "Original instructions preserved from 47ecea9, not newly fold-tested. Before scaling: independently fold-test every step and add owned photographs/diagrams."
+    "status": "needs-review",
+    "reviewedAt": "2026-10-25",
+    "note": "Desk review only; see docs/tutorial-audit-20261025.md. Physical fold test and owned step images required.",
+    "publicNote": "The existing text refers to a bottom point without explaining how to form it, and there are no matching step images to resolve the gap. We have not physically verified this sequence. Please use the illustrated resources below for a first attempt instead of guessing the missing folds."
   }
 }

@@ -135,8 +135,8 @@
   },
   {
     "slug": "crane-tutorial.html",
-    "title": "How to Fold an Origami Crane | Step-by-Step Tutorial",
-    "description": "Learn how to fold the classic origami crane with easy step-by-step instructions for beginners.",
+    "title": "Origami Crane Tutorial Under Review | OrigamiPenguin.com",
+    "description": "Our existing origami crane instructions need a physical folding check. Read the limitations and find illustrated learning resources before starting.",
     "nav": "tutorials",
     "noindex": false,
     "styles": "",
@@ -230,8 +230,8 @@
   },
   {
     "slug": "heart-tutorial.html",
-    "title": "How to Fold an Origami Heart | Easy Step-by-Step Tutorial",
-    "description": "A quick, easy origami heart tutorial, perfect for cards, gifts, and bookmarks.",
+    "title": "Origami Heart Tutorial Under Review | OrigamiPenguin.com",
+    "description": "Our existing origami heart instructions need a physical folding check. Read the limitations and find illustrated learning resources before starting.",
     "nav": "tutorials",
     "noindex": false,
     "styles": "",
@@ -310,7 +310,7 @@
   {
     "slug": "index.html",
     "title": "Origami Penguin | Free Origami Tutorials & Step-by-Step Guides",
-    "description": "Learn origami with easy step-by-step tutorials, free diagrams, and recommended supplies. Start folding penguins, cranes, hearts & more today!",
+    "description": "Explore free origami basics, classroom activities, tutorial review notes, and paper and supply guides.",
     "nav": "home",
     "noindex": false,
     "styles": "",
@@ -383,8 +383,8 @@
   },
   {
     "slug": "penguin-tutorial.html",
-    "title": "How to Make an Origami Penguin | Step-by-Step Tutorial",
-    "description": "Our existing origami penguin tutorial is under review for inconsistent folding directions. Read the review note before using the diagram or steps.",
+    "title": "Origami Penguin Tutorial Under Review | OrigamiPenguin.com",
+    "description": "Our existing origami penguin instructions need a physical folding check. Read the limitations and find illustrated learning resources before starting.",
     "nav": "tutorials",
     "noindex": false,
     "styles": "",
@@ -508,7 +508,7 @@
   {
     "slug": "tutorials.html",
     "title": "Origami Tutorials | Free Step-by-Step Folding Guides",
-    "description": "Browse every free origami tutorial on OrigamiPenguin.com — beginner-friendly step-by-step guides including the penguin, crane, and heart. New folds added regularly.",
+    "description": "Read the review status of our penguin, heart and crane tutorials, and find illustrated learning resources for your first folds.",
     "nav": "tutorials",
     "noindex": false,
     "styles": "",
