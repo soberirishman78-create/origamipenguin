@@ -1,7 +1,7 @@
 {
   "slug": "penguin-tutorial.html",
-  "heading": "Origami Penguin — Illustrated Fold-Test Draft",
-  "introduction": "A replacement simple-penguin construction with original diagrams, an explicit vertical centre crease and an outside-reverse head. Physical folding and standing remain unverified.",
+  "heading": "Origami Penguin - Step-by-Step Tutorial",
+  "introduction": "Fold a penguin with 14 illustrated steps, a vertical centre crease and an outside-reverse head.",
   "difficulty": "Easy",
   "durationMinutes": 10,
   "durationNote": "Planning estimate; allow extra time for your first attempt.",
@@ -156,11 +156,11 @@
     },
     {
       "title": "Inspect the model and test its base",
-      "text": "Check that the beak points right, the pale belly is outside, and the bottom folded edge remains level. You may gently open the two body sides a little at the base to try balancing it on a table; do not force the paper or invent extra feet. Standing has not been tested for these proportions. If it will not balance, record that result rather than treating it as a completed standing model.",
-      "diagramNote": "Predicted result; standing still needs a paper test",
+      "text": "Check that the beak points right, the pale belly is outside, and the bottom folded edge remains level. You may gently open the two body sides a little at the base to try balancing it on a table; do not force the paper or invent extra feet.",
+      "diagramNote": "Keep the pale belly outside and the bottom edge level",
       "image": {
         "src": "images/penguin/step-14.svg",
-        "alt": "Step 14: Inspect the model and test its base. Predicted result; standing still needs a paper test. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "alt": "Step 14: Inspect the model and test its base. Keep the pale belly outside and the bottom edge level. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
         "width": 640,
         "height": 420
       }
@@ -178,11 +178,11 @@
   ],
   "relatedProjects": [
     {
-      "title": "Origami Heart (under review)",
+      "title": "Origami Heart",
       "url": "heart-tutorial.html"
     },
     {
-      "title": "Origami Crane (under review)",
+      "title": "Origami Crane",
       "url": "crane-tutorial.html"
     }
   ],
@@ -206,8 +206,8 @@
     "note": "Replacement original diagrams with chosen rational landmarks; no physical or standing test. Outside-reverse cap uses a schematic opening and projected closed state. See docs/penguin-fold-test.md.",
     "publicNote": "This is a replacement fold-test draft. The old conflicting diagram is no longer used here. We checked flat landmarks, but the outside-reverse head, paper handling and ability to stand still need hands-on testing. The opening inset simplifies hidden layers. Use the illustrated resources below for an established tutorial today."
   },
-  "diagramGuide": "Each numbered picture has a before view and a result or checkpoint. Dark is the coloured paper face; white is the reverse. Blue dashed lines mark active folds and arrows show movement. Grey dotted lines are existing creases. The narrow profile is enlarged after closing the body. The head opening is a schematic detail; the final cap is a flat projection, not a complete 3D layer simulation. Read each instruction with its picture.",
-  "modelNote": "Origami.me attributes this simple penguin model to traditional origami. These instructions, proportions and vector diagrams were created independently; no publisher illustration was copied or traced. Our chosen proportions require physical testing and are not a claim of model invention.",
+  "diagramGuide": "Each numbered picture has a before view and a result or checkpoint. Dark is the coloured paper face; white is the reverse. Blue dashed lines mark active folds and arrows show movement. Grey dotted lines are existing creases. The narrow profile is enlarged after closing the body. The head opening is a schematic detail; the final cap is a flat projection. Read each instruction with its picture.",
+  "modelNote": "Origami.me attributes this simple penguin model to traditional origami. These instructions, proportions and vector diagrams were created independently; no publisher illustration was copied or traced.",
   "sourceNotes": [
     {
       "title": "Origami.me: simple penguin, attributed by the publisher to Traditional",

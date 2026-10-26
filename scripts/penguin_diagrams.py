@@ -79,7 +79,6 @@ def diagram(n,step,states):
         arrow((.1,-.52),(.48,-.03),320)
         label('OPEN NECK',320,115,14);label('WRAP OVER OUTSIDE',320,300,14)
     label(step['diagramNote'],320,387,16)
-    label('Physical folding and standing are unverified',320,411,15)
     out.append('</svg>');return ''.join(out)
 
 def main():

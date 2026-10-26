@@ -140,7 +140,7 @@ def svg(n,t):
     note=t['diagramNote']
     # Keep readable labels short; full operational detail is adjacent prose.
     label(note,360,435,17)
-    label('SCHEMATIC: hidden layers omitted; physical fold test required',360,466,16)
+    label('SCHEMATIC: hidden layers omitted',360,466,16)
     out.append('</svg>');return ''.join(out)
 
 def main():

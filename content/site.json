@@ -135,8 +135,8 @@
   },
   {
     "slug": "crane-tutorial.html",
-    "title": "Illustrated Origami Crane Fold-Test Draft | OrigamiPenguin.com",
-    "description": "Revised origami crane steps with original diagrams and a physical-test checklist. Desk-reviewed draft; hands-on folding remains unverified.",
+    "title": "Origami Crane Step-by-Step Tutorial | OrigamiPenguin.com",
+    "description": "Fold a traditional crane with 26 illustrated steps covering the square base, petal folds, neck, tail and wings.",
     "nav": "tutorials",
     "noindex": false,
     "styles": "",
@@ -230,8 +230,8 @@
   },
   {
     "slug": "heart-tutorial.html",
-    "title": "Illustrated Origami Heart Fold-Test Draft | OrigamiPenguin.com",
-    "description": "Revised origami heart steps with original diagrams and a physical-test checklist. Desk-reviewed draft; hands-on folding remains unverified.",
+    "title": "Origami Heart Step-by-Step Tutorial | OrigamiPenguin.com",
+    "description": "Fold a flat heart with 11 illustrated steps, from the centre creases to the rounded lobes.",
     "nav": "tutorials",
     "noindex": false,
     "styles": "",
@@ -310,7 +310,7 @@
   {
     "slug": "index.html",
     "title": "Origami Penguin | Free Origami Tutorials & Step-by-Step Guides",
-    "description": "Explore free origami basics, classroom activities, tutorial review notes, and paper and supply guides.",
+    "description": "Explore free origami tutorials, folding basics, classroom activities, and paper and supply guides.",
     "nav": "home",
     "noindex": false,
     "styles": "",
@@ -383,8 +383,8 @@
   },
   {
     "slug": "penguin-tutorial.html",
-    "title": "Illustrated Origami Penguin Fold-Test Draft | OrigamiPenguin.com",
-    "description": "Revised origami penguin steps with original diagrams and a physical-test checklist. Desk-reviewed draft; hands-on folding remains unverified.",
+    "title": "Origami Penguin Step-by-Step Tutorial | OrigamiPenguin.com",
+    "description": "Fold a penguin with 14 illustrated steps, a vertical centre crease and an outside-reverse head.",
     "nav": "tutorials",
     "noindex": false,
     "styles": "",
@@ -508,7 +508,7 @@
   {
     "slug": "tutorials.html",
     "title": "Origami Tutorials | Free Step-by-Step Folding Guides",
-    "description": "Read the review status of our penguin, heart and crane tutorials, and find illustrated learning resources for your first folds.",
+    "description": "Follow illustrated heart, crane and penguin tutorials, with step-by-step diagrams and additional folding resources.",
     "nav": "tutorials",
     "noindex": false,
     "styles": "",

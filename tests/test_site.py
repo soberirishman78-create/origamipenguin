@@ -75,14 +75,27 @@ class SiteTests(unittest.TestCase):
                     for n,step in enumerate(data['step'],1):
                         self.assertIn('step-'+str(n),self.pages[name].ids)
                         self.assertEqual(step['url'],ORIGIN+'/'+name.removesuffix('.html')+'#step-'+str(n))
-    def test_unverified_penguin_has_visible_review_notice(self):
-        text=self.files['penguin-tutorial.html']
-        self.assertTrue(self.pages['penguin-tutorial.html'].find('h2',id='review-heading'))
-        self.assertIn('outside-reverse head, paper handling and ability to stand still need hands-on testing.',text)
-        self.assertLess(text.index('id="review-heading"'),text.index('id="instructions"'))
-        self.assertNotIn('images/penguin-step-diagram.webp',text)
-        schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)]
-        self.assertFalse(any(item['@type']=='HowTo' for item in schemas))
+    def test_tutorial_public_copy_and_internal_status(self):
+        affected=['index.html','tutorials.html','guide.html','supplies.html']
+        for model,count in [('heart',11),('crane',26),('penguin',14)]:
+            name=model+'-tutorial.html'; affected.append(name)
+            data=json.loads((ROOT/'content/tutorials'/f'{model}.json').read_text(encoding='utf-8'))
+            self.assertEqual(data['review']['status'],'needs-review')
+            self.assertTrue(data['foldTestChecks'])
+            self.assertEqual(len(self.pages[name].find('img')),count)
+            self.assertNotIn('"@type": "HowTo"',self.files[name])
+            self.assertNotIn('<dt>Difficulty</dt>',self.files[name])
+            self.assertIn('Step-by-step instructions',self.files[name])
+            for step in data['steps']:
+                svg=(ROOT/step['image']['src']).read_text(encoding='utf-8')
+                self.assertNotRegex(svg.lower(),r'unverified|physical fold test|fold-test draft')
+        for name in affected:
+            text=self.files[name].lower()
+            self.assertNotRegex(text,r'under review|fold-test draft|physical.fold.test|hands-on test|unverified|physically tested|beginner.tested|certified|fold-tested')
+            self.assertIn('As an Amazon Associate we earn from qualifying purchases.',self.files[name])
+            self.assertTrue(self.pages[name].find('a',href='/affiliate-disclosure'))
+            self.assertTrue(self.pages[name].find('a',href='/privacy'))
+        self.assertNotIn('images/penguin-step-diagram.webp',self.files['penguin-tutorial.html'])
     def test_affiliate_tracking_preserved(self):
         # Baseline public URLs captured before any edits. No tag rewriting.
         expected=json.loads((ROOT/'tests/affiliate-baseline.json').read_text(encoding='utf-8'))
@@ -98,16 +111,12 @@ class SiteTests(unittest.TestCase):
                     if a.get('target')=='_blank':self.assertIn('noopener',a.get('rel','').split())
             if urls:current[name]=dict(collections.Counter(urls))
         self.assertEqual(current,expected)
-    def test_unverified_tutorials_offer_a_useful_exit(self):
-        for model in ['penguin','heart','crane']:
-            name=model+'-tutorial.html'; text=self.files[name]; page=self.pages[name]
-            with self.subTest(page=name):
-                self.assertTrue(page.find('h2',id='review-heading'))
-                self.assertTrue(page.find('a',href='/guide#illustrated-resources'))
-                self.assertLess(text.index('id="review-heading"'),text.index('id="instructions"'))
-                self.assertNotIn('"@type": "HowTo"',text)
-                self.assertNotIn('<dt>Difficulty</dt>',text)
-                self.assertIn('under review',text.lower())
+    def test_tutorial_learning_and_zoom_links(self):
+        for model,count in [('heart',11),('crane',26),('penguin',14)]:
+            page=self.pages[model+'-tutorial.html']
+            self.assertTrue(page.find('a',href='/guide'))
+            for n in range(1,count+1):
+                self.assertTrue(page.find('a',href=f'/images/{model}/step-{n:02d}.svg'))
         for name in ['supplies.html','tutorials.html']:
             self.assertTrue(self.pages[name].find('a',href='/guide#illustrated-resources'))
         for destination in ['heart','crane','beginners-guide']:

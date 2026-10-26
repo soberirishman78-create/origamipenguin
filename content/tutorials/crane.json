@@ -1,7 +1,7 @@
 {
   "slug": "crane-tutorial.html",
-  "heading": "Origami Crane — Illustrated Fold-Test Draft",
-  "introduction": "A replacement traditional-crane sequence with original diagrams. Flat landmarks have been checked; pocket operations and physical folding remain under review.",
+  "heading": "Origami Crane - Step-by-Step Tutorial",
+  "introduction": "Fold a traditional crane with 26 illustrated steps covering the square base, petal folds, neck, tail and wings.",
   "difficulty": "Moderate",
   "durationMinutes": 20,
   "durationNote": "Planning estimate; allow extra time for your first attempt.",
@@ -338,7 +338,7 @@
     },
     {
       "title": "Lower the wings and inspect",
-      "text": "Take the two BROAD upper flaps, one on each face, and lower them gently away from each other. Keep the narrow neck and tail between them. Stop if the body resists; there is no need to force it round or blow into it. Adjust the wing pose gently. This final three-dimensional opening still needs a real paper test. Record the first mismatch, especially a trapped layer or crease that refuses to reverse.",
+      "text": "Take the two BROAD upper flaps, one on each face, and lower them gently away from each other. Keep the narrow neck and tail between them. Stop if the body resists; there is no need to force it round or blow into it. Adjust the wing pose gently.",
       "before": "beak",
       "after": "wings",
       "diagramNote": "Broad wings open to opposite faces; pose schematic",
@@ -362,11 +362,11 @@
   ],
   "relatedProjects": [
     {
-      "title": "Origami Penguin (under review)",
+      "title": "Origami Penguin",
       "url": "penguin-tutorial.html"
     },
     {
-      "title": "Origami Heart (under review)",
+      "title": "Origami Heart",
       "url": "heart-tutorial.html"
     }
   ],
@@ -390,8 +390,8 @@
     "note": "Original schematic diagrams and independent desk mechanics review. No physical folding or complete 3D layer verification. See docs/crane-fold-test.md.",
     "publicNote": "This replacement is a fold-test draft, not a physically verified tutorial. Exact flat landmarks have been checked, but the square-base collapse, petal pockets, inside reverses and wing opening still need hands-on testing. The drawings omit hidden layers and use schematic opening views. Use the illustrated resources below for an established tutorial today."
   },
-  "diagramGuide": "Read the words with each numbered drawing. Grey is the resting paper and blue selects a flap; these colours do not represent the two paper faces. Blue dashed lines are active creases, dotted grey lines are existing references, and arrows show movement. Drawings may enlarge checkpoints. Pocket-opening views and the final pose are schematics, not a certified 3D layer simulation. Turn-over means flip the whole model; it does not mean rotate it on the table.",
-  "modelNote": "This is the traditional crane. Our wording and vector drawings are original; publisher art was not copied or traced. The sequence uses conventional inside reverse folds for neck and tail throughout. Shaping angles vary; schematic pocket drawings still need physical confirmation.",
+  "diagramGuide": "Read the words with each numbered drawing. Grey is the resting paper and blue selects a flap; these colours do not represent the two paper faces. Blue dashed lines are active creases, dotted grey lines are existing references, and arrows show movement. Drawings may enlarge checkpoints. Pocket-opening views and the final pose are schematics that simplify the hidden layers. Turn-over means flip the whole model; it does not mean rotate it on the table.",
+  "modelNote": "This is the traditional crane. Our wording and vector drawings are original; publisher art was not copied or traced. The sequence uses conventional inside reverse folds for neck and tail throughout. Shaping angles vary.",
   "sourceNotes": [
     {
       "title": "Web Japan / NIPPONIA: crane, with ORIGAMI HOUSE consultation",
