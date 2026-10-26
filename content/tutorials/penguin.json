@@ -1,7 +1,7 @@
 {
   "slug": "penguin-tutorial.html",
-  "heading": "Origami Penguin — Tutorial Under Review",
-  "introduction": "Our existing penguin instructions are preserved below for reference. Read the review note before choosing a project.",
+  "heading": "Origami Penguin — Illustrated Fold-Test Draft",
+  "introduction": "A replacement simple-penguin construction with original diagrams, an explicit vertical centre crease and an outside-reverse head. Physical folding and standing remain unverified.",
   "difficulty": "Easy",
   "durationMinutes": 10,
   "durationNote": "Planning estimate; allow extra time for your first attempt.",
@@ -12,53 +12,162 @@
   ],
   "steps": [
     {
-      "title": "Start with a Square Sheet",
-      "text": "Use a square piece of origami paper. If your paper is two-toned, start with the darker colour facing down — this will become the penguin's back."
+      "title": "Set the starting face",
+      "text": "Use a thin two-colour square, about 15 cm along each side, with a dark side and a white side. Put the DARK side up, with one corner at the top and one toward you. Do not begin with an edge horizontal.",
+      "diagramNote": "Dark face up; diamond orientation",
+      "image": {
+        "src": "images/penguin/step-01.svg",
+        "alt": "Step 1: Set the starting face. Dark face up; diamond orientation. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Fold in Half Diagonally",
-      "text": "Bring one corner up to meet the opposite corner, forming a triangle. Crease firmly along the fold, then unfold back to a flat square."
+      "title": "Make the vertical centre crease",
+      "text": "Bring the LEFT corner onto the RIGHT corner. Match the edges, press, then reopen fully. The crease must join the top and bottom corners. This vertical crease will later close the body; a top-to-bottom fold would make the wrong reference line.",
+      "diagramNote": "Left corner to right; crease and reopen",
+      "image": {
+        "src": "images/penguin/step-02.svg",
+        "alt": "Step 2: Make the vertical centre crease. Left corner to right; crease and reopen. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Unfold",
-      "text": "Open the paper back out flat. You now have a diagonal crease running corner to corner."
+      "title": "Turn to the white face",
+      "text": "Turn the whole square over left to right, keeping the top corner up. The WHITE side is now facing you and the vertical crease is still visible.",
+      "diagramNote": "TURN OVER; top corner stays up",
+      "image": {
+        "src": "images/penguin/step-03.svg",
+        "alt": "Step 3: Turn to the white face. TURN OVER; top corner stays up. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Fold Both Sides to the Centre Crease",
-      "text": "Fold the left and right corners inward so their edges meet along the diagonal crease in the centre. You should now have a kite shape."
+      "title": "Fold the right upper edge partway inward",
+      "text": "Fold the upper-right edge inward, stopping SHORT of the vertical centreline. Keep the top corner fixed. In this illustrated version, the new crease reaches the lower-right sloping edge about two-thirds of the horizontal distance from the centreline to the original right corner. The moved right corner ends near the centre, but does not touch it. Keep a white gap beside the centre crease.",
+      "diagramNote": "Leave a white gap; do not meet the centre",
+      "image": {
+        "src": "images/penguin/step-04.svg",
+        "alt": "Step 4: Fold the right upper edge partway inward. Leave a white gap; do not meet the centre. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Fold the Bottom Point Up",
-      "text": "Take the bottom pointed tip and fold it upward so it meets roughly the centre of the shape. This creates the penguin's white belly area."
+      "title": "Match the left upper fold",
+      "text": "Fold the upper-left edge inward to match the right fold. Keep both tips equally far from the centreline. The two dark flaps should frame a white central gap. Do not overlap them across the centre or flatten this into a closed kite.",
+      "diagramNote": "Match both sides; retain the central gap",
+      "image": {
+        "src": "images/penguin/step-05.svg",
+        "alt": "Step 5: Match the left upper fold. Match both sides; retain the central gap. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Fold Up the Smaller Triangle",
-      "text": "Fold the small triangle at the top downward slightly — this will become the penguin's head. Leave a small white strip showing at the top for the face."
+      "title": "Turn to the other face",
+      "text": "Turn the whole model over left to right with the narrow point still at the top. You now see the mostly dark back of the previous folds. The two wider side corners remain below the top point.",
+      "diagramNote": "TURN OVER; narrow point remains up",
+      "image": {
+        "src": "images/penguin/step-06.svg",
+        "alt": "Step 6: Turn to the other face. TURN OVER; narrow point remains up. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Fold the Entire Shape in Half",
-      "text": "Fold the whole shape in half vertically (mountain fold), bringing the right side behind the left. The penguin's body shape should now be visible from the side."
+      "title": "Fold in the right side corner",
+      "text": "Fold the right side corner inward on a VERTICAL crease, through all layers at that corner. In this version the crease is a little beyond halfway from the centreline to that side corner: three-fifths of that horizontal distance. The moved tip stops short of the centre. Keep the crease vertical; do not bring the entire upper edge to the centre.",
+      "diagramNote": "Vertical side fold; tip stops short of centre",
+      "image": {
+        "src": "images/penguin/step-07.svg",
+        "alt": "Step 7: Fold in the right side corner. Vertical side fold; tip stops short of centre. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Fold the Head Back at an Angle",
-      "text": "Rotate the top portion (the head) forward at a slight angle using an inside reverse fold. This gives the penguin its characteristic tilted head and creates the beak."
+      "title": "Match the left side corner",
+      "text": "Repeat the same vertical fold on the left. Make the two folds symmetrical. Their lower endpoints should be level with one another; use those endpoints as the reference for the next fold. Keep the long top point unchanged.",
+      "diagramNote": "Match the two vertical folds and lower endpoints",
+      "image": {
+        "src": "images/penguin/step-08.svg",
+        "alt": "Step 8: Match the left side corner. Match the two vertical folds and lower endpoints. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Fold the Base Flaps Down (Wings)",
-      "text": "On each side, fold the bottom corner flaps downward and outward to form the penguin's flippers/wings. Crease well so they hold their shape."
+      "title": "Fold up the bottom point",
+      "text": "Fold the bottom point upward along a horizontal line joining the LOWER endpoints of the two vertical side creases. The point comes to rest above that line, revealing a white triangle. The bottom of the model is now a straight folded edge. Do not aim the tip at the top of the model.",
+      "diagramNote": "Fold across the lower endpoints; white tip appears",
+      "image": {
+        "src": "images/penguin/step-09.svg",
+        "alt": "Step 9: Fold up the bottom point. Fold across the lower endpoints; white tip appears. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     },
     {
-      "title": "Your Penguin is Complete!",
-      "text": "Stand your penguin upright. Give it a gentle squeeze at the base to help it balance. Add a dot with a pen for the eye and your origami penguin is done!"
+      "title": "Close the body away from you",
+      "text": "Keep the new white triangle facing you. Fold the LEFT half behind the RIGHT half along the vertical centre crease: this is a mountain fold, away from you. Keep the top point up and the straight bottom edge down. The pale belly must stay on the outside. The drawing enlarges the narrow side profile.",
+      "diagramNote": "Mountain fold; keep the pale belly outside",
+      "image": {
+        "src": "images/penguin/step-10.svg",
+        "alt": "Step 10: Close the body away from you. Mountain fold; keep the pale belly outside. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
+    },
+    {
+      "title": "Precrease the head in both directions",
+      "text": "On the closed side profile, bend the top tip outward and downward toward the right to choose a head angle. The crease slopes upward toward the right edge of the neck. The example places the beak roughly level with the top of the neck. Press, reopen, then bend the same cap the opposite way on that same line and reopen again. Both sides of the paired neck layers need a usable crease.",
+      "diagramNote": "Precrease both ways; return the tip upright",
+      "image": {
+        "src": "images/penguin/step-11.svg",
+        "alt": "Step 11: Precrease the head in both directions. Precrease both ways; return the tip upright. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
+    },
+    {
+      "title": "Open the paired neck layers",
+      "text": "Ease the two sides of the neck apart slightly at the prepared head crease. Keep the body and belly folds together below it. Identify the cap above that crease. This opening view is a schematic detail: do not make a new fold where its separated walls are drawn.",
+      "diagramNote": "Open only enough to free the prepared cap",
+      "image": {
+        "src": "images/penguin/step-12.svg",
+        "alt": "Step 12: Open the paired neck layers. Open only enough to free the prepared cap. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
+    },
+    {
+      "title": "Wrap the head over the outside",
+      "text": "Bring the cap outward over the OUTSIDE of the neck as the prepared crease reverses, then close the two neck sides again. The cap wraps around the exterior; do not tuck it between the neck layers. Match the head crease on both sides before flattening gently. The projected result shows a right-facing beak. Hidden wrap layers and paper thickness are not fully represented by the drawing.",
+      "diagramNote": "OUTSIDE reverse: over the neck, then reclose",
+      "image": {
+        "src": "images/penguin/step-13.svg",
+        "alt": "Step 13: Wrap the head over the outside. OUTSIDE reverse: over the neck, then reclose. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
+    },
+    {
+      "title": "Inspect the model and test its base",
+      "text": "Check that the beak points right, the pale belly is outside, and the bottom folded edge remains level. You may gently open the two body sides a little at the base to try balancing it on a table; do not force the paper or invent extra feet. Standing has not been tested for these proportions. If it will not balance, record that result rather than treating it as a completed standing model.",
+      "diagramNote": "Predicted result; standing still needs a paper test",
+      "image": {
+        "src": "images/penguin/step-14.svg",
+        "alt": "Step 14: Inspect the model and test its base. Predicted result; standing still needs a paper test. Dark is the coloured face; white the reverse. Outside-reverse opening is schematic.",
+        "width": 640,
+        "height": 420
+      }
     }
   ],
   "finishedImage": null,
-  "diagram": {
-    "src": "images/penguin-step-diagram.webp",
-    "alt": "Existing ten-step origami penguin diagram",
-    "width": 1408,
-    "height": 768
-  },
+  "diagram": null,
   "tips": [
     "Line up corners before pressing a crease from the middle outwards.",
     "Keep the paper facing the same way as the instruction before each fold."
@@ -93,8 +202,26 @@
   "videoUrl": null,
   "review": {
     "status": "needs-review",
-    "reviewedAt": "2026-10-01",
-    "note": "Desk review identified text/diagram inconsistencies. Model attribution and folding sequence remain unverified; no physical fold test performed. See docs/penguin-quality-review.md.",
-    "publicNote": "The written steps and diagram do not consistently agree. Step 6 says both up and down, and later folds need clarification. We have not yet verified a corrected sequence by folding it. Please wait for the corrected tutorial before using this page for a first attempt or a class."
-  }
+    "reviewedAt": "2026-10-25",
+    "note": "Replacement original diagrams with chosen rational landmarks; no physical or standing test. Outside-reverse cap uses a schematic opening and projected closed state. See docs/penguin-fold-test.md.",
+    "publicNote": "This is a replacement fold-test draft. The old conflicting diagram is no longer used here. We checked flat landmarks, but the outside-reverse head, paper handling and ability to stand still need hands-on testing. The opening inset simplifies hidden layers. Use the illustrated resources below for an established tutorial today."
+  },
+  "diagramGuide": "Each numbered picture has a before view and a result or checkpoint. Dark is the coloured paper face; white is the reverse. Blue dashed lines mark active folds and arrows show movement. Grey dotted lines are existing creases. The narrow profile is enlarged after closing the body. The head opening is a schematic detail; the final cap is a flat projection, not a complete 3D layer simulation. Read each instruction with its picture.",
+  "modelNote": "Origami.me attributes this simple penguin model to traditional origami. These instructions, proportions and vector diagrams were created independently; no publisher illustration was copied or traced. Our chosen proportions require physical testing and are not a claim of model invention.",
+  "sourceNotes": [
+    {
+      "title": "Origami.me: simple penguin, attributed by the publisher to Traditional",
+      "url": "https://origami.me/penguin/"
+    }
+  ],
+  "foldTestChecks": [
+    "Record tester/date, paper type and side length; photograph each numbered state.",
+    "Step2: verify the precrease joins TOP and BOTTOM; the left corner was brought to the right.",
+    "Steps4–5: check symmetrical dark flaps and a white gap; do not force both edges to centre.",
+    "Steps7–9: compare side-fold endpoints and confirm the bottom fold joins their lower ends.",
+    "Step10: close the left half BEHIND the right; the pale belly remains outside.",
+    "Steps11–13: precrease both ways and wrap the head OVER the neck exterior, not inside it. Record any trapped layer.",
+    "Step14: record whether the model balances without extra feet or glue; standing is unverified.",
+    "Record the first instruction, layer, colour or orientation mismatch; have a second beginner test the entire corrected sequence before changing needs-review."
+  ]
 }

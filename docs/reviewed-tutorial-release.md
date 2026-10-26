@@ -1,0 +1,15 @@
+# Combined reviewed tutorial release, 2026-10-25
+
+Preparation base: e4202e9ea0ba82848db40349694c85124cc2e772. Rollback branch backup/pre-illustrated-tutorials-20261025 remains at that base. Local working branch draft/illustrated-heart-20261025 retains the heart, crane and penguin checkpoints. No production publication was performed in this desktop task. Parent publishes through its existing connected GitHub workflow after verifying current main; the final desktop remote refresh failed to connect to GitHub, so the base must be checked again there.
+
+All three rebuilt tutorials passed independent second desk review as clearly labelled physically untested drafts. Heart: 11 steps/diagrams. Crane: 26. Penguin: 14. All 51 SVGs are original deterministic drawings. Corresponding source JSON, generators, tests, generated HTML and audit notes are included. The old penguin raster remains preserved but is not displayed. Homepage, catalogue, guide, supplies and metadata now describe the revised drafts accurately while retaining beginner alternatives.
+
+Heart checkpoint: 49826d0c5de04f06b406b418113a480ea1692913. Crane checkpoint: f64895b458737bbd04f55ee2986ba6c3d9232d00. Penguin/integration checkpoint: 19d2e74a482fe2707e214d7a6cbd4ad90d1e27f2. This release note follows those checkpoints without changing tutorial mechanics.
+
+Validation: all18 unittest tests pass; all51 SVGs match generators. Existing tests verify generated-page freshness, local links and fragments, affiliate URL baseline, page shell, metadata and absence of added tracking. Dedicated tests verify selected landmarks and planar area/orientation, not physical folding. Desktop and375px mobile tutorial layouts were inspected, all images loaded and no horizontal overflow observed. Small diagrams offer vector zoom links. Separate PDFs were rendered and checked: heart13pages, crane28pages, penguin16pages. Text extraction matched all51 exact numbered instruction texts. Browser print-dialog pagination remains unverified; separate PDFs are verified render artifacts.
+
+Independent review fixed actual defects before passing: heart missing reference creases/ambiguous lower-half wording; crane wrong edge arrow, unchanged rear apex, obsolete rear corners and missing reversal hinges; penguin low-contrast fold marks. Integrated routing review found accurate step counts, no unsupported completion claims and no affiliate URL changes.
+
+Every tutorial retains needs-review and a prominent limitation before instructions. No HowTo schema, fold-tested label or physical-success claim is enabled. Hands-on and beginner tests are still necessary for every model. Pay particular attention to crane collapse/petal/reversal pockets, penguin outside-wrap access and standing, and paper thickness/flatness in all models. Schematic pocket views omit hidden layers; final poses are not certified 3D simulations. Do not interpret passing software tests as evidence of physical foldability.
+
+Infrastructure, affiliate identity, links and disclosures are preserved. No purchases, advertising, credentials, monetization enrolment, new analytics vendors or tracking changes were made.

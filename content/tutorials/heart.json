@@ -1,7 +1,7 @@
 {
   "slug": "heart-tutorial.html",
-  "heading": "Origami Heart — Tutorial Under Review",
-  "introduction": "Our existing heart instructions are preserved below for reference. Read the review note before choosing a project.",
+  "heading": "Origami Heart — Illustrated Fold-Test Draft",
+  "introduction": "A replacement flat-heart sequence with original diagrams. Its ideal geometry has been checked, but a real paper-fold test is still required.",
   "difficulty": "Easy",
   "durationMinutes": 5,
   "durationNote": "Planning estimate; allow extra time for your first attempt.",
@@ -12,28 +12,114 @@
   ],
   "steps": [
     {
-      "title": "Fold in Half",
-      "text": "With the colored side down, fold your square in half vertically, then unfold to leave a center crease."
+      "title": "Set the starting orientation",
+      "text": "Use a two-colour square about 15 cm along each side. Put the white side up with a corner at the top, like a diamond. The opposite corner points toward you. Keep this orientation unless told to turn over.",
+      "image": {
+        "src": "images/heart/step-01.svg",
+        "alt": "Step 1: Set the starting orientation. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
     },
     {
-      "title": "Fold the Top Corners Down",
-      "text": "Fold the top two corners down to the center crease, forming a triangle shape at the top."
+      "title": "Make the vertical centre crease",
+      "text": "Bring the left corner onto the right corner. Match the edges, crease, then reopen completely. The crease runs from top corner to bottom corner.",
+      "image": {
+        "src": "images/heart/step-02.svg",
+        "alt": "Step 2: Make the vertical centre crease. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
     },
     {
-      "title": "Fold the Bottom Point Up",
-      "text": "Fold the bottom point up to meet the base of the triangle, creating a pentagon-like shape."
+      "title": "Make the horizontal centre crease",
+      "text": "Bring the bottom corner onto the top corner. Crease, then reopen completely. The creases cross at the centre. Your paper is a flat white diamond again.",
+      "image": {
+        "src": "images/heart/step-03.svg",
+        "alt": "Step 3: Make the horizontal centre crease. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
     },
     {
-      "title": "Round the Top Lobes",
-      "text": "Fold the top two corners inward and slightly downward to round them into the heart's two lobes."
+      "title": "Bring the top tip to the centre",
+      "text": "Fold the top corner down to the crease crossing. Keep this flap folded. The NEW top edge is horizontal, halfway between the old top corner and the centre. The folded triangle shows the coloured side.",
+      "image": {
+        "src": "images/heart/step-04.svg",
+        "alt": "Step 4: Bring the top tip to the centre. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
     },
     {
-      "title": "Tuck and Flip",
-      "text": "Tuck the bottom point behind the lobes slightly to sharpen the heart's shape, then flip the paper over."
+      "title": "Bring the bottom tip to the new top edge",
+      "text": "Lift the bottom corner to the midpoint of the NEW horizontal top edge made in step 4, on the vertical centre crease. Do not aim for the original top corner or the centre crossing. Press the new horizontal fold. Check for a straight lower edge and a point at each side.",
+      "image": {
+        "src": "images/heart/step-05.svg",
+        "alt": "Step 5: Bring the bottom tip to the new top edge. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
     },
     {
-      "title": "Your Heart is Complete!",
-      "text": "Flatten all the creases firmly. Your origami heart is ready to use as a card topper, bookmark, or gift tag."
+      "title": "Lift the right half",
+      "text": "Keep the straight lower edge nearest you. Hold its midpoint still. Lift the lower-right section with every layer beneath it up and inward so the RIGHT HALF of the lower edge lies on the vertical centreline. Its outer end meets the midpoint of the top edge. Make the diagonal crease from the lower midpoint toward the upper-right sloping edge. Do not rotate the whole model.",
+      "image": {
+        "src": "images/heart/step-06.svg",
+        "alt": "Step 6: Lift the right half. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
+    },
+    {
+      "title": "Lift the left half",
+      "text": "Repeat with the lower-left section and every layer beneath it. Align the LEFT HALF of the lower edge on the same centreline, beside the edge folded in step 6. Keep the right lobe in place. Check for two equally high upper tips, a notch between them and one bottom point. A centre seam is normal.",
+      "image": {
+        "src": "images/heart/step-07.svg",
+        "alt": "Step 7: Lift the left half. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
+    },
+    {
+      "title": "Turn the model over",
+      "text": "Turn the whole model over from left to right, like turning a page. Keep the bottom point down. You now see the back, where the shaping flaps will remain. This is a turn-over, not a rotation on the table.",
+      "image": {
+        "src": "images/heart/step-08.svg",
+        "alt": "Step 8: Turn the model over. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
+    },
+    {
+      "title": "Fold the side tips inward",
+      "text": "On the back, fold the far-right point inward toward the centre; repeat at the far-left point. Move all layers at each small tip. Keep both new creases vertical and equal. In these diagrams each tip moves about two-fifths of its horizontal distance to the centreline. These are shaping folds: compare both sides rather than forcing a thick stack.",
+      "image": {
+        "src": "images/heart/step-09.svg",
+        "alt": "Step 9: Fold the side tips inward. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
+    },
+    {
+      "title": "Fold both top tips down",
+      "text": "Still on the back, fold each upper tip down to the height of the centre notch. Keep the new creases horizontal and at the same height. Fold only the little pointed caps, not the whole lobes. Press gently and keep the notch open.",
+      "image": {
+        "src": "images/heart/step-10.svg",
+        "alt": "Step 10: Fold both top tips down. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
+    },
+    {
+      "title": "Turn to the front and check",
+      "text": "Turn the whole model over left to right again, keeping the bottom point down. The shaping flaps should be behind the coloured front. Check for equal lobes, an open notch and a downward point. This is a predicted result, not a photograph or proof of a successful paper fold. Record the first step that stopped matching the diagram rather than guessing another fold.",
+      "image": {
+        "src": "images/heart/step-11.svg",
+        "alt": "Step 11: Turn to the front and check. Before on the left; predicted result on the right. Pink is the coloured face; white the reverse.",
+        "width": 640,
+        "height": 360
+      }
     }
   ],
   "finishedImage": null,
@@ -73,7 +159,28 @@
   "review": {
     "status": "needs-review",
     "reviewedAt": "2026-10-25",
-    "note": "Desk review only; see docs/tutorial-audit-20261025.md. Physical fold test and owned step images required.",
-    "publicNote": "The existing text refers to a bottom point without explaining how to form it, and there are no matching step images to resolve the gap. We have not physically verified this sequence. Please use the illustrated resources below for a first attempt instead of guessing the missing folds."
-  }
+    "note": "Original polygon-reflection diagrams; independent desk geometry review. No physical fold test. Original model designer not confirmed. See docs/heart-fold-test.md.",
+    "publicNote": "This replacement sequence and its original diagrams are a fold-test draft. We checked ideal geometry and step order, but have not physically folded it or tested it with a beginner. Keep this limitation with any printout. Use the illustrated resources below if you need an established tutorial today."
+  },
+  "diagramGuide": "Each picture shows BEFORE on the left and AFTER on the right at the same scale. Pink is the coloured face; white is the reverse. Blue dashed lines mark active folds; arrows show moving corners. Grey dotted lines are existing creases. Steps 2 and 3 end reopened; steps 8 and 11 turn the whole model over. Outlines show ideal layer boundaries, not paper thickness. Read the words together with each picture.",
+  "foldTestChecks": [
+    "Record tester, date and paper; use a 15 cm two-colour square.",
+    "Step 4: does the tip touch the crease crossing?",
+    "Step 5: does the bottom tip reach the midpoint of the NEW top edge?",
+    "Steps 6–7: do the lower half-edges meet on the centreline, leaving equal lobes and an open notch?",
+    "Step 8: did you turn over, keeping the bottom point down?",
+    "Steps 9–11: are the small flaps behind the front, and does the heart stay flat without glue?",
+    "Photograph each state; record the first wording, arrow, colour, layer or orientation mismatch.",
+    "Ask a second beginner to follow only this page. Record stalls and repeat the full revised sequence before marking fold-tested."
+  ],
+  "sourceNotes": [
+    {
+      "title": "Japan Society educational heart reference (publisher copyright retained)",
+      "url": "https://www.japansociety.org.uk/usercontent/04782371b403dc3881a69411a8d673e6/OrigamiHeart.pdf"
+    },
+    {
+      "title": "Childhood Magic: independently published flat-heart tutorial",
+      "url": "https://childhoodmagic.com/origami-heart/"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "slug": "crane-tutorial.html",
-  "heading": "Origami Crane — Tutorial Under Review",
-  "introduction": "Our existing crane instructions are preserved below for reference. Read the review note before choosing a project.",
+  "heading": "Origami Crane — Illustrated Fold-Test Draft",
+  "introduction": "A replacement traditional-crane sequence with original diagrams. Flat landmarks have been checked; pocket operations and physical folding remain under review.",
   "difficulty": "Moderate",
   "durationMinutes": 20,
   "durationNote": "Planning estimate; allow extra time for your first attempt.",
@@ -12,32 +12,342 @@
   ],
   "steps": [
     {
-      "title": "Fold and Unfold Diagonally",
-      "text": "Fold your square paper in half diagonally, then unfold. Repeat along the other diagonal so both creases are visible."
+      "title": "Choose the starting face",
+      "text": "Use a thin two-colour square, about 15 cm along each side. Set it coloured side up, with one corner pointing away from you and the opposite corner toward you. The diagrams use grey and blue to identify parts, not the actual paper colours.",
+      "before": "sheet",
+      "after": "sheet",
+      "diagramNote": "Start coloured side up; corner toward you",
+      "image": {
+        "src": "images/crane/step-01.svg",
+        "alt": "Step 1: Choose the starting face. Start coloured side up; corner toward you. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
     },
     {
-      "title": "Fold in Half Both Ways",
-      "text": "Fold the paper in half horizontally and unfold, then vertically and unfold. You should now have four creases crossing in the center."
+      "title": "Crease from top to bottom",
+      "text": "Bring the left corner onto the right corner. Match the edges, press the fold, and open the square fully. This makes the crease joining the top and bottom corners.",
+      "before": "sheet",
+      "after": "sheet-v",
+      "diagramNote": "Fold and reopen completely",
+      "image": {
+        "src": "images/crane/step-02.svg",
+        "alt": "Step 2: Crease from top to bottom. Fold and reopen completely. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
     },
     {
-      "title": "Collapse into a Square Base",
-      "text": "Using the creases as guides, bring the corners together and collapse the paper into a smaller square shape."
+      "title": "Crease from left to right",
+      "text": "Bring the bottom corner onto the top corner. Press and open fully. Both diagonal creases now cross at the centre. Keep the coloured face up until the next step.",
+      "before": "sheet-v",
+      "after": "sheet-cross",
+      "diagramNote": "Fold and reopen completely",
+      "image": {
+        "src": "images/crane/step-03.svg",
+        "alt": "Step 3: Crease from left to right. Fold and reopen completely. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
     },
     {
-      "title": "Fold Up the Sides",
-      "text": "Fold the left and right edges of the top layer inward to the center line, forming a kite shape. Repeat on the back."
+      "title": "Turn the sheet over",
+      "text": "Flip the whole sheet left to right, keeping a corner at the top. The white face is now up. This turnover matters: the next creases must bend the opposite way from the diagonal creases.",
+      "before": "sheet-cross",
+      "after": "sheet-white",
+      "diagramNote": "TURN OVER; do not merely rotate",
+      "image": {
+        "src": "images/crane/step-04.svg",
+        "alt": "Step 4: Turn the sheet over. TURN OVER; do not merely rotate. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
     },
     {
-      "title": "Petal Fold the Wings",
-      "text": "Lift each flap upward and flatten it into a petal fold to form the crane's wings on both sides."
+      "title": "Crease between opposite edge midpoints",
+      "text": "With white up, bring the lower-right edge onto the upper-left edge, crease and reopen. Then bring the lower-left edge onto the upper-right edge, crease and reopen. The new creases join opposite edge midpoints. All four lines meet at the centre; the diagonal creases rise when the white side faces up.",
+      "before": "sheet-white",
+      "after": "sheet-all",
+      "diagramNote": "Two edge-to-edge folds; reopen both",
+      "image": {
+        "src": "images/crane/step-05.svg",
+        "alt": "Step 5: Crease between opposite edge midpoints. Two edge-to-edge folds; reopen both. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
     },
     {
-      "title": "Shape the Head and Tail",
-      "text": "Fold one narrow point down slightly to create the head using a reverse fold, and leave the other as the tail."
+      "title": "Collapse the square base",
+      "text": "Keep white up and the bottom corner nearest you. Bring the left and right corners inward and down toward the bottom corner along the existing creases. Let the top corner settle onto them while the centre rises into a closed top point. Flatten without adding a new crease. You need a small diamond with its closed corner at the top and four loose original corners together at the bottom. If it forms a triangle with a straight open top, reopen and check the crease directions.",
+      "before": "sheet-all",
+      "after": "base",
+      "diagramNote": "Pocket collapse; result enlarged for detail",
+      "image": {
+        "src": "images/crane/step-06.svg",
+        "alt": "Step 6: Collapse the square base. Pocket collapse; result enlarged for detail. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
     },
     {
-      "title": "Your Crane is Complete!",
-      "text": "Gently pull the wings apart and curve them for a finished look. Add a fold to the head for a beak if you'd like."
+      "title": "Precrease the front lower edges",
+      "text": "Keep the closed point up. On the FRONT flap only, bring the lower-right sloping edge to the vertical centre crease; repeat with the lower-left edge. Keep the rear flaps in place. The two folded side corners meet on the centreline above the middle of the square base.",
+      "before": "base",
+      "after": "kite",
+      "diagramNote": "Front flap only; rear layers stay down",
+      "image": {
+        "src": "images/crane/step-07.svg",
+        "alt": "Step 7: Precrease the front lower edges. Front flap only; rear layers stay down. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Mark the petal hinge",
+      "text": "Fold the small top triangle down over the two folded side flaps, through the top stack. Its crease runs horizontally between the points where those side folds meet the upper edges. Press this cross-crease; it will be the hinge for both petal openings. The closed top point folds down with the stack; no unchanged top point should stick up behind it.",
+      "before": "kite",
+      "after": "cap",
+      "diagramNote": "Cross-crease joins the side-fold endpoints",
+      "image": {
+        "src": "images/crane/step-08.svg",
+        "alt": "Step 8: Mark the petal hinge. Cross-crease joins the side-fold endpoints. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Reopen the three precreases",
+      "text": "Unfold the top triangle and both side folds made in steps 7 and 8. Return to the square-base outline, closed point still up. Keep the diagonal side creases and horizontal hinge visible. Do not open the square base itself.",
+      "before": "cap",
+      "after": "precreases",
+      "diagramNote": "Reopen the sides AND the top triangle",
+      "image": {
+        "src": "images/crane/step-09.svg",
+        "alt": "Step 9: Reopen the three precreases. Reopen the sides AND the top triangle. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Open one front flap",
+      "text": "Lift just the frontmost loose bottom corner. Hold the rear layers against the table. Raise the selected corner above the horizontal hinge. This opens a pocket; allow its two side walls to bend along the creases rather than pulling the whole stack upward.",
+      "before": "precreases",
+      "after": "pocket",
+      "diagramNote": "Opening view is schematic, not to scale",
+      "image": {
+        "src": "images/crane/step-10.svg",
+        "alt": "Step 10: Open one front flap. Opening view is schematic, not to scale. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Flatten the first petal",
+      "text": "Continue moving the lifted corner upward. Guide both side walls inward so the long edges meet on the centreline. The upper parts of the side precreases must reverse their direction. Flatten the elongated front diamond. Its two shoulder points stay at the ends of the horizontal hinge; the rear square-base flaps remain behind it. Stop if a side buckles or you have lifted more than one loose corner.",
+      "before": "pocket",
+      "after": "one-petal",
+      "diagramNote": "Front petal flat; unfinished base behind",
+      "image": {
+        "src": "images/crane/step-11.svg",
+        "alt": "Step 11: Flatten the first petal. Front petal flat; unfinished base behind. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Turn over to the unfinished side",
+      "text": "Turn the entire model over left to right. Keep the long raised point at the top and the loose corners at the bottom. You should see the unfinished square-base face in front, with the first petal extending behind it.",
+      "before": "one-petal",
+      "after": "back-base",
+      "diagramNote": "TURN OVER; raised point stays up",
+      "image": {
+        "src": "images/crane/step-12.svg",
+        "alt": "Step 12: Turn over to the unfinished side. TURN OVER; raised point stays up. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Precrease the second face",
+      "text": "On the newly exposed front flap, fold each lower sloping edge to the centreline as in step 7. Leave the completed petal behind it alone.",
+      "before": "back-base",
+      "after": "back-kite",
+      "diagramNote": "Second face; completed petal stays behind",
+      "image": {
+        "src": "images/crane/step-13.svg",
+        "alt": "Step 13: Precrease the second face. Second face; completed petal stays behind. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Reopen the second face and find the hinge",
+      "text": "Unfold BOTH side folds just made on the second face. Find the horizontal hinge already creased through the top stack in step 8; it joins the upper ends of these side creases. Keep the completed long petal behind the square-base face. Do not fold that long petal down to make another hinge.",
+      "before": "back-kite",
+      "after": "back-precreases",
+      "diagramNote": "Reopen side folds; use the existing cross-crease",
+      "image": {
+        "src": "images/crane/step-14.svg",
+        "alt": "Step 14: Reopen the second face and find the existing hinge. The completed long petal stays behind the square-base face.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Open the second petal",
+      "text": "Lift only the frontmost loose bottom corner on this side. Keep the completed petal behind it down. Open the pocket across the horizontal hinge, guide the side walls inward, and flatten the lifted corner upward as in steps 10 and 11. Do not pull a lower corner of the completed petal up again.",
+      "before": "back-precreases",
+      "after": "bird",
+      "diagramNote": "Repeat the full pocket opening on this side",
+      "image": {
+        "src": "images/crane/step-15.svg",
+        "alt": "Step 15: Open the second petal. Repeat the full pocket opening on this side. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Check the bird base",
+      "text": "You should have a long diamond. Above the shoulder line are two broad flaps, one on the front and one on the back: these will be wings. Below that line are two separate narrow points, left and right: these will be neck and tail. Gently separate the two lower tips just enough to identify them, then close them again. If the lower part is one unseparated flap, return to the petal steps.",
+      "before": "bird",
+      "after": "bird",
+      "diagramNote": "Identify 2 broad wings and 2 narrow legs",
+      "image": {
+        "src": "images/crane/step-16.svg",
+        "alt": "Step 16: Check the bird base. Identify 2 broad wings and 2 narrow legs. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Narrow the front edges",
+      "text": "Fold each lower outer edge of the front layer toward the centreline. The fold starts at the bottom tip and continues upward into the shoulder area. Keep the two lower points separate; do not fold the whole diamond in half. Leave a hairline gap at the centre if the paper becomes crowded. The diagram shows the ideal alignment without paper thickness.",
+      "before": "bird",
+      "after": "front-narrow",
+      "diagramNote": "Top layers only; keep the lower tips separate",
+      "image": {
+        "src": "images/crane/step-17.svg",
+        "alt": "Step 17: Narrow the front edges. Top layers only; keep the lower tips separate. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Turn over without rotating",
+      "text": "Turn the whole model left to right, keeping the long point up. The broader, still-unfolded face is now in front.",
+      "before": "front-narrow",
+      "after": "bird",
+      "diagramNote": "TURN OVER to the remaining broad face",
+      "image": {
+        "src": "images/crane/step-18.svg",
+        "alt": "Step 18: Turn over without rotating. TURN OVER to the remaining broad face. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Narrow the remaining edges",
+      "text": "Repeat the two lower-edge folds on this face. Check both sides before continuing: each narrow lower point has folded edges, and the two broad upper wing flaps are still separate. Do not join the two lower tips together.",
+      "before": "bird",
+      "after": "narrow",
+      "diagramNote": "Match the first side; retain both lower legs",
+      "image": {
+        "src": "images/crane/step-19.svg",
+        "alt": "Step 19: Narrow the remaining edges. Match the first side; retain both lower legs. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Precrease the left lower point upward",
+      "text": "Select the LEFT narrow lower point, not the broad upper wing. Fold it upward and outward toward the upper left, with its base near the shoulder line. This is a shaping angle: aim for a raised point visible beside the broad wings, not a point crossing the centre. Press the diagonal crease, then return the point downward.",
+      "before": "narrow",
+      "after": "left-pre",
+      "diagramNote": "Selected narrow point: fold up, then reopen",
+      "image": {
+        "src": "images/crane/step-20.svg",
+        "alt": "Step 20: Precrease the left lower point upward. Selected narrow point: fold up, then reopen. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Inside-reverse the left point",
+      "text": "Slightly separate the layers around the left point at its side opening. Push the point upward INSIDE that pocket along the crease just made. The crease changes direction as the point moves between the surrounding layers. Close the pocket and flatten the raised point at the chosen angle. The broad wing must remain outside it. Do not paste the point across the front face.",
+      "before": "left-pre",
+      "after": "left-up",
+      "diagramNote": "Open side pocket; reverse point inside; close",
+      "image": {
+        "src": "images/crane/step-21.svg",
+        "alt": "Step 21: Inside-reverse the left point. Open side pocket; reverse point inside; close. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Precrease the right lower point upward",
+      "text": "Select the remaining RIGHT narrow lower point. Fold it upward and outward toward the upper right, aiming for a similar height to the first point. Press the crease and reopen it downward. Leave the already raised point in place.",
+      "before": "left-up",
+      "after": "left-up",
+      "diagramNote": "Second narrow point: fold up, then reopen",
+      "image": {
+        "src": "images/crane/step-22.svg",
+        "alt": "Step 22: Precrease the right lower point upward. Second narrow point: fold up, then reopen. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Inside-reverse the right point",
+      "text": "Open the layers at the right side, raise the narrow point inside the pocket along its new crease, then close and flatten. You now need two raised narrow points between two broad wing flaps. Pause here to check their layer positions before making a head.",
+      "before": "left-up",
+      "after": "both-up",
+      "diagramNote": "Second side pocket: reverse inside and close",
+      "image": {
+        "src": "images/crane/step-23.svg",
+        "alt": "Step 23: Inside-reverse the right point. Second side pocket: reverse inside and close. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Precrease a small head",
+      "text": "Choose the raised left narrow point for the neck. Fold only a short piece of its tip downward to mark a beak, then unfold that small fold. Choose the length to suit your paper; the drawing is an example, not a measured requirement. Keep the other raised point straight for the tail.",
+      "before": "both-up",
+      "after": "both-up",
+      "diagramNote": "Small tip only: fold down, then reopen",
+      "image": {
+        "src": "images/crane/step-24.svg",
+        "alt": "Step 24: Precrease a small head. Small tip only: fold down, then reopen. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Inside-reverse the beak",
+      "text": "Ease apart the two sides of the selected neck tip. Push its small end inward and down along the new crease, then close the neck around it. The bent tip stays between the neck layers. Do not fold the entire neck down.",
+      "before": "both-up",
+      "after": "beak",
+      "diagramNote": "Open neck tip; reverse the small end inside",
+      "image": {
+        "src": "images/crane/step-25.svg",
+        "alt": "Step 25: Inside-reverse the beak. Open neck tip; reverse the small end inside. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
+    },
+    {
+      "title": "Lower the wings and inspect",
+      "text": "Take the two BROAD upper flaps, one on each face, and lower them gently away from each other. Keep the narrow neck and tail between them. Stop if the body resists; there is no need to force it round or blow into it. Adjust the wing pose gently. This final three-dimensional opening still needs a real paper test. Record the first mismatch, especially a trapped layer or crease that refuses to reverse.",
+      "before": "beak",
+      "after": "wings",
+      "diagramNote": "Broad wings open to opposite faces; pose schematic",
+      "image": {
+        "src": "images/crane/step-26.svg",
+        "alt": "Step 26: Lower the wings and inspect. Broad wings open to opposite faces; pose schematic. Grey and blue identify paper parts, not face colours; hidden layers omitted.",
+        "width": 720,
+        "height": 480
+      }
     }
   ],
   "finishedImage": null,
@@ -77,7 +387,29 @@
   "review": {
     "status": "needs-review",
     "reviewedAt": "2026-10-25",
-    "note": "Desk review only; see docs/tutorial-audit-20261025.md. Physical fold test and owned step images required.",
-    "publicNote": "The existing text compresses the square-base and petal-fold transitions and does not explain how to raise the neck and tail. There are no matching step images. We have not physically verified this sequence. Please use the illustrated resources below for a first attempt."
-  }
+    "note": "Original schematic diagrams and independent desk mechanics review. No physical folding or complete 3D layer verification. See docs/crane-fold-test.md.",
+    "publicNote": "This replacement is a fold-test draft, not a physically verified tutorial. Exact flat landmarks have been checked, but the square-base collapse, petal pockets, inside reverses and wing opening still need hands-on testing. The drawings omit hidden layers and use schematic opening views. Use the illustrated resources below for an established tutorial today."
+  },
+  "diagramGuide": "Read the words with each numbered drawing. Grey is the resting paper and blue selects a flap; these colours do not represent the two paper faces. Blue dashed lines are active creases, dotted grey lines are existing references, and arrows show movement. Drawings may enlarge checkpoints. Pocket-opening views and the final pose are schematics, not a certified 3D layer simulation. Turn-over means flip the whole model; it does not mean rotate it on the table.",
+  "modelNote": "This is the traditional crane. Our wording and vector drawings are original; publisher art was not copied or traced. The sequence uses conventional inside reverse folds for neck and tail throughout. Shaping angles vary; schematic pocket drawings still need physical confirmation.",
+  "sourceNotes": [
+    {
+      "title": "Web Japan / NIPPONIA: crane, with ORIGAMI HOUSE consultation",
+      "url": "https://web-japan.org/nipponia/nipponia41/en/feature/feature04.html"
+    },
+    {
+      "title": "Origami.me: traditional crane (uses a different neck/tail setup)",
+      "url": "https://origami.me/crane/"
+    }
+  ],
+  "foldTestChecks": [
+    "Record tester/date, paper type and side length. Use thin two-colour paper; photograph every state.",
+    "Steps 4–6: confirm opposite crease polarity, closed point up and loose corners down.",
+    "Steps 7–15: check both complete precrease/unfold/petal cycles. Only one loose flap lifts each time.",
+    "Step 16: identify two broad wings and two distinct lower legs.",
+    "Steps 17–19: narrow both faces while retaining separate legs.",
+    "Steps 20–23: confirm each raised point sits inside the side pocket and between wing layers.",
+    "Steps 24–26: reverse only the small beak tip; open broad wings without tearing or forcing the body.",
+    "Record first layer, orientation, crease or wording mismatch. Have a second beginner repeat the full corrected sequence before changing needs-review."
+  ]
 }

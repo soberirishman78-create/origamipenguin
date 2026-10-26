@@ -78,7 +78,9 @@ class SiteTests(unittest.TestCase):
     def test_unverified_penguin_has_visible_review_notice(self):
         text=self.files['penguin-tutorial.html']
         self.assertTrue(self.pages['penguin-tutorial.html'].find('h2',id='review-heading'))
-        self.assertIn('We have not yet verified a corrected sequence by folding it.',text)
+        self.assertIn('outside-reverse head, paper handling and ability to stand still need hands-on testing.',text)
+        self.assertLess(text.index('id="review-heading"'),text.index('id="instructions"'))
+        self.assertNotIn('images/penguin-step-diagram.webp',text)
         schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)]
         self.assertFalse(any(item['@type']=='HowTo' for item in schemas))
     def test_affiliate_tracking_preserved(self):
