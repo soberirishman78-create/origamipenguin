@@ -23,7 +23,7 @@ canvas{position:absolute;inset:0}
 <main id="main" tabindex="-1">
 <h1 class="sr-only">Matrix code rain</h1>
 <canvas aria-hidden="true"></canvas>
-<p class="sr-only">Decorative green computer characters falling on a black background in a repeating sixty-second loop. Six wealth-building affirmations occasionally blend vertically into the falling green characters: Money flows to me; I build lasting wealth; I save consistently; I grow my skills; I create value; I spot opportunities. No interaction required.</p>
+<p class="sr-only">Decorative green computer characters falling on a black background in a repeating sixty-second loop. Six wealth-building affirmations gradually resolve within falling strands, hold briefly, and dissolve back into random green code: Money flows to me; I build lasting wealth; I save consistently; I grow my skills; I create value; I spot opportunities. No interaction required.</p>
 </main>
 <script>
 'use strict';
@@ -45,11 +45,33 @@ function resize(){
  }));
  draw((performance.now()-start)%PERIOD);
 }
+// Each ten-second scene resolves for 2.5s, holds for 2.2s, then dissolves for 2.5s.
+function phraseLetterVisible(within,index,length,scene){
+ const rank=(hash(scene*307+index*101+7)%1000)/1000;
+ if(within<.15||within>=.87)return false;
+ if(within<.40)return (within-.15)/.25>rank;
+ if(within<.62)return true;
+ return (within-.62)/.25<rank;
+}
+function phraseColumn(scene,phrase,visibleRows){
+ let chosen=0,best=Infinity;
+ for(let col=0;col<columns.length;col++){
+  const stream=columns[col],ring=visibleRows+stream.tail+4;
+  const midpoint=(scene+.51)/AFFIRMATIONS.length;
+  const head=(stream.offset*ring+midpoint*ring*stream.cycles)%ring;
+  // Prefer a strand with the phrase on screen during the readable hold.
+  const score=Math.abs(head-(visibleRows+phrase.length)/2);
+  if(score<best){best=score;chosen=col}
+ }
+ return chosen;
+}
 function draw(elapsed){
  const phase=((elapsed%PERIOD)+PERIOD)%PERIOD/PERIOD;
  ctx.fillStyle='#000';ctx.fillRect(0,0,width,height);
  ctx.font='bold 17px "Courier New",Consolas,monospace';ctx.textAlign='center';ctx.textBaseline='top';
  const visibleRows=Math.ceil(height/STEP),tick=Math.floor(phase*480);
+ const scene=Math.floor(phase*AFFIRMATIONS.length),within=(phase*AFFIRMATIONS.length)%1;
+ const phrase=AFFIRMATIONS[scene],chosen=phraseColumn(scene,phrase,visibleRows);
  for(let col=0;col<columns.length;col++){
   const stream=columns[col],ring=visibleRows+stream.tail+4;
   const head=(stream.offset*ring+phase*ring*stream.cycles)%ring;
@@ -60,10 +82,7 @@ function draw(elapsed){
    const y=row*STEP-STEP,x=col*STEP+STEP/2;
    // Briefly weave the affirmation into an ordinary falling stream.
    // The leading letter sits above the rest, so it reads top to bottom.
-   const scene=Math.floor(phase*AFFIRMATIONS.length),within=(phase*AFFIRMATIONS.length)%1;
-   const phrase=AFFIRMATIONS[scene];
-   const chosen=hash(scene*719+41)%columns.length;
-   const embedded=col===chosen&&within>.22&&within<.78&&trail<phrase.length;
+   const embedded=col===chosen&&trail<phrase.length&&phraseLetterVisible(within,phrase.length-1-trail,phrase.length,scene);
    const glyph=embedded?phrase[phrase.length-1-trail]:GLYPHS[hash(col*92821+trail*68917+tick*127)%GLYPHS.length];
    if(trail===0){ctx.fillStyle='#c9ffd5';ctx.shadowColor='#43ff70';ctx.shadowBlur=10}
    else{ctx.fillStyle='rgba(0,'+Math.round(100+155*intensity)+',38,'+(.12+.85*intensity)+')';ctx.shadowColor='#00f540';ctx.shadowBlur=trail<4?5:0}
