@@ -23,11 +23,12 @@ canvas{position:absolute;inset:0}
 <main id="main" tabindex="-1">
 <h1 class="sr-only">Matrix code rain</h1>
 <canvas aria-hidden="true"></canvas>
-<p class="sr-only">Decorative green computer characters falling on a black background in a repeating sixty-second loop. The words Money flows to me occasionally blend vertically into the falling green characters. No interaction required.</p>
+<p class="sr-only">Decorative green computer characters falling on a black background in a repeating sixty-second loop. Six wealth-building affirmations occasionally blend vertically into the falling green characters: Money flows to me; I build lasting wealth; I save consistently; I grow my skills; I create value; I spot opportunities. No interaction required.</p>
 </main>
 <script>
 'use strict';
 const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');
+const AFFIRMATIONS=['MONEYFLOWSTOME','IBUILDLASTINGWEALTH','ISAVECONSISTENTLY','IGROWMYSKILLS','ICREATEVALUE','ISPOTOPPORTUNITIES'];
 const PERIOD=60000,STEP=20,GLYPHS='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$#+=*<>:{}[]/アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ';
 let width=0,height=0,columns=[],start=performance.now(),request=0;
 function hash(n){n=Math.imul(n^(n>>>16),0x45d9f3b);n=Math.imul(n^(n>>>16),0x45d9f3b);return (n^(n>>>16))>>>0}
@@ -52,15 +53,15 @@ function draw(elapsed){
  for(let col=0;col<columns.length;col++){
   const stream=columns[col],ring=visibleRows+stream.tail+4;
   const head=(stream.offset*ring+phase*ring*stream.cycles)%ring;
-  for(let trail=0;trail<stream.tail;trail++){
+  for(let trail=0;trail<Math.max(stream.tail,AFFIRMATIONS[Math.floor(phase*AFFIRMATIONS.length)].length);trail++){
    let row=(head-trail+ring)%ring;
    if(row>visibleRows+1)continue;
-   const intensity=Math.pow(1-trail/stream.tail,1.65)*stream.brightness;
+   const intensity=Math.pow(Math.max(0,1-trail/Math.max(stream.tail,AFFIRMATIONS[Math.floor(phase*AFFIRMATIONS.length)].length)),1.65)*stream.brightness;
    const y=row*STEP-STEP,x=col*STEP+STEP/2;
    // Briefly weave the affirmation into an ordinary falling stream.
    // The leading letter sits above the rest, so it reads top to bottom.
-   const phrase='MONEYFLOWSTOME';
-   const scene=Math.floor(phase*6),within=(phase*6)%1;
+   const scene=Math.floor(phase*AFFIRMATIONS.length),within=(phase*AFFIRMATIONS.length)%1;
+   const phrase=AFFIRMATIONS[scene];
    const chosen=hash(scene*719+41)%columns.length;
    const embedded=col===chosen&&within>.22&&within<.78&&trail<phrase.length;
    const glyph=embedded?phrase[phrase.length-1-trail]:GLYPHS[hash(col*92821+trail*68917+tick*127)%GLYPHS.length];
