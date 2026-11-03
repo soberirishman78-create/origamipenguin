@@ -394,7 +394,7 @@
         "@type": "HowTo",
         "name": "How to Make an Origami Penguin",
         "description": "Fold an easy origami penguin in 10 steps using one square sheet of paper. No scissors or glue required.",
-        "image": "https://origamipenguin.com/images/penguin-step-diagram.jpg",
+        "image": "https://origamipenguin.com/images/penguin-social-14-steps.png",
         "supply": [
           {
             "@type": "HowToSupply",
@@ -479,7 +479,7 @@
       }
     ],
     "scripts": [],
-    "image": "https://origamipenguin.com/images/penguin-step-diagram.jpg"
+    "image": "https://origamipenguin.com/images/penguin-social-14-steps.png"
   },
   {
     "slug": "privacy.html",
