@@ -9,7 +9,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = 'https://origamipenguin.com'
-NAV = [('home', '/', 'Home'), ('tutorials', '/tutorials.html', 'Tutorials'), ('guide', '/guide.html', "Beginner’s Guide"), ('teachers', '/origami-for-teachers.html', 'For Teachers'), ('supplies', '/supplies.html', 'Supplies'), ('blog', '/blog.html', 'Articles'), ('about', '/about.html', 'About')]
+NAV = [('home', '/', 'Home'), ('tutorials', '/tutorials.html', 'Tutorials'), ('guide', '/guide.html', "Beginner’s Guide"), ('teachers', '/origami-for-teachers.html', 'For Teachers'), ('supplies', '/supplies.html', 'Supplies'), ('blog', '/blog.html', 'Articles'), ('books', '/books.html', 'Books'), ('textbooks', '/textbooks.html', 'Textbooks'), ('about', '/about.html', 'About')]
 
 def canonicalize(text):
     # Cloudflare Pages serves extensionless pages and redirects .html requests.
