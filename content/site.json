@@ -309,8 +309,8 @@
   },
   {
     "slug": "index.html",
-    "title": "Origami Penguin | Free Origami Tutorials & Step-by-Step Guides",
-    "description": "Explore free origami tutorials, folding basics, classroom activities, and paper and supply guides.",
+    "title": "Origami Penguin | Books, Creative Articles & Origami Guides",
+    "description": "Explore books by Jeremy Kelly, notes on writing and educational creation, origami tutorials, and relaxing soundscapes.",
     "nav": "home",
     "noindex": false,
     "styles": "",
@@ -320,7 +320,7 @@
         "@type": "WebSite",
         "name": "Origami Penguin",
         "url": "https://origamipenguin.com/",
-        "description": "Free step-by-step origami tutorials, beginner guides, and recommended paper-folding supplies."
+        "description": "Explore books by Jeremy Kelly, notes on writing and educational creation, origami tutorials, and relaxing soundscapes."
       }
     ],
     "scripts": [],
