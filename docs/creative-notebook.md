@@ -13,5 +13,3 @@ Tests cover series completeness, substantive distinct paragraphs, publication da
 Continuous listening: the embed queues the remaining unique card video IDs in page order, wraps around from the selected starting video, and repeats the collection with YouTube playlist/loop parameters. Page arrival is still silent; Stop removes the whole playlist. The heading and external fallback identify the session/starting video rather than claiming to track the currently playing item.
 
 Shuffle & play starts a new listening session using a Fisher-Yates permutation of all 12 unique videos, with no repeated video within a cycle. The shuffled cycle repeats until stopped or another selection starts a normal session. Pressing Shuffle again creates a fresh order.
-
-While a listening session is active, ordinary same-site links open in a browsing iframe below the unchanged video iframe. The parent remains Chill Corner, preserving playback; Back to Chill Corner restores the full collection. Modified clicks, downloads and external/new-tab links keep their normal behavior. Refreshing or closing the parent page ends playback.
