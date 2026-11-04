@@ -51,7 +51,7 @@ def creative_pages(root):
                 import re
                 parts=re.fullmatch(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?',v['duration'])
                 hours,minutes,seconds=(int(n or 0) for n in parts.groups())
-                duration=' · '.join(filter(None,[str(hours)+(' hour' if hours==1 else ' hours') if hours else '',str(minutes)+' minutes' if minutes else '',str(seconds)+' seconds' if not hours and not minutes else '']))
+                duration=' · '.join(filter(None,[str(hours)+(' hour' if hours==1 else ' hours') if hours else '',str(minutes)+(' minute' if minutes==1 else ' minutes') if minutes else '',str(seconds)+' seconds' if not hours and seconds else '']))
                 if v.get('format')=='short':duration+=' · Short'
             body+='<article class="video-card"><a class="chill-play" data-video="'+e(v['id'])+'" data-name="'+e(title)+'" href="'+e(v['url'])+'" target="_blank" rel="noopener" aria-label="Play '+e(title)+' here"><img src="'+e(v['image'])+'" alt="'+e(title)+' video thumbnail" width="1280" height="720" loading="lazy" decoding="async"></a><div class="video-copy"><p class="duration">'+e(duration)+'</p><h3>'+e(title)+'</h3><p>'+e(description)+'</p><a class="chill-play" data-video="'+e(v['id'])+'" data-name="'+e(title)+'" href="'+e(v['url'])+'" target="_blank" rel="noopener">Play here</a></div></article>'
         body+='</div></section>'
