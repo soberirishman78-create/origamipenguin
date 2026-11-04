@@ -40,6 +40,9 @@ class JournalTests(unittest.TestCase):
         text=(ROOT/'chill-corner.html').read_text(encoding='utf-8')
         self.assertEqual(text.count('class="video-card"'),12)
         self.assertNotIn('<iframe',text)
+        self.assertIn('id="chill-player"',text)
+        self.assertEqual(text.count('class="chill-play"'),24)
+        self.assertIn('/js/chill-player.js',text)
         self.assertNotIn('<video',text)
         for v in videos:
             self.assertEqual(v['channelId'],'UCnt0WRg-Cv8RdcRQ011L1DA')
