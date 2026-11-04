@@ -12,7 +12,7 @@ def short(b):
  t=re.sub(r' \(Explain Like I.m 5: Big Ideas Made Tiny\)$','',t)
  return t.split(': ',1) if ': ' in t else [t,'']
 def card(b):
- title,sub=short(b);series=b['series'];f=''.join('<a href="'+esc(x['url'],quote=True)+'" rel="noopener">'+esc(x['format'])+'</a>' for x in b['formats'])
+ title,sub=short(b);series=re.sub(r' of \d+(?=: The Kelly Brothers Mysteries)', '', b['series']);f=''.join('<a href="'+esc(x['url'],quote=True)+'" rel="noopener">'+esc(x['format'])+'</a>' for x in b['formats'])
  return '<article class="book-card" data-category="'+b['category']+'"><a class="book-cover" href="'+b['url']+'" aria-label="View '+esc(b['title'],quote=True)+' on Amazon"><img src="'+esc(b['image'],quote=True)+'" alt="Cover of '+esc(b['title'],quote=True)+'" width="210" height="315" loading="lazy" decoding="async"></a><div class="book-info">'+('<p class="book-series">'+esc(series)+'</p>' if series else '')+'<h3><a href="'+b['url']+'">'+esc(title)+'</a></h3>'+('<p class="book-subtitle">'+esc(sub)+'</p>' if sub else '')+'<div class="book-action"><a href="'+b['url']+'">View on Amazon <span aria-hidden="true">↗</span></a>'+('<p class="book-formats">'+f+'</p>' if f else '')+'</div></div></article>'
 collections=[
  ('fiction','books','Fiction books','Find your next adventure.','Explore Jeremy Kelly’s fiction collection: the Kelly Brothers Mysteries, the Skybridge Trilogy, modern classic retellings, and standalone stories.'),
