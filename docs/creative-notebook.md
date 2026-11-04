@@ -11,3 +11,5 @@ All new articles are dated November 4, 2026. The numbered order is a suggested w
 Tests cover series completeness, substantive distinct paragraphs, publication dates, hub membership, previous/next navigation, preserved origami links, and verified-channel video coverage, alongside the existing site checks.
 
 Continuous listening: the embed queues the remaining unique card video IDs in page order, wraps around from the selected starting video, and repeats the collection with YouTube playlist/loop parameters. Page arrival is still silent; Stop removes the whole playlist. The heading and external fallback identify the session/starting video rather than claiming to track the currently playing item.
+
+Shuffle & play starts a new listening session using a Fisher-Yates permutation of all 12 unique videos, with no repeated video within a cycle. The shuffled cycle repeats until stopped or another selection starts a normal session. Pressing Shuffle again creates a fresh order.
