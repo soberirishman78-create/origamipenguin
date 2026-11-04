@@ -35,13 +35,13 @@ class JournalTests(unittest.TestCase):
 
     def test_chill_links_are_verified_channel_videos(self):
         videos=json.loads((ROOT/'content/relaxation-videos.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(videos),12)
-        self.assertEqual(len({v['id'] for v in videos}),12)
+        self.assertEqual(len(videos),83)
+        self.assertEqual(len({v['id'] for v in videos}),83)
         text=(ROOT/'chill-corner.html').read_text(encoding='utf-8')
-        self.assertEqual(text.count('class="video-card"'),12)
+        self.assertEqual(text.count('class="video-card"'),83)
         self.assertNotIn('<iframe',text)
         self.assertIn('id="chill-player"',text)
-        self.assertEqual(text.count('class="chill-play"'),24)
+        self.assertEqual(text.count('class="chill-play"'),166)
         self.assertIn('/js/chill-player.js',text)
         self.assertNotIn('<video',text)
         for v in videos:

@@ -13,3 +13,5 @@ Tests cover series completeness, substantive distinct paragraphs, publication da
 Continuous listening: the embed queues the remaining unique card video IDs in page order, wraps around from the selected starting video, and repeats the collection with YouTube playlist/loop parameters. Page arrival is still silent; Stop removes the whole playlist. The heading and external fallback identify the session/starting video rather than claiming to track the currently playing item.
 
 Shuffle & play starts a new listening session using a Fisher-Yates permutation of all 12 unique videos, with no repeated video within a cycle. The shuffled cycle repeats until stopped or another selection starts a normal session. Pressing Shuffle again creates a fresh order.
+
+Expanded November 4, 2026 to all 83 public channel uploads: 46 regular videos and 37 Shorts, with no live uploads returned. Unique IDs reconcile to the public channel video count. Shorts, noise, water, seasonal and channel introduction have separate sections. All cards feed the existing continuous and shuffled queues. Future uploads require a catalog refresh; this is a verified snapshot.
