@@ -30,7 +30,7 @@
       "image": "https://m.media-amazon.com/images/I/71ERu-bbKPL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "Book 1 of 3: Rebuilding Without Power",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [
         {
           "format": "Paperback",
@@ -46,7 +46,7 @@
       "image": "https://m.media-amazon.com/images/I/71di03DpWVL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "Book 3 of 3: Rebuilding Without Power",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [
         {
           "format": "Paperback",
@@ -157,7 +157,7 @@
       "image": "https://m.media-amazon.com/images/I/9134SmrNAdL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -634,8 +634,8 @@
       "title": "Don't Tell Scary Stories at Campsite Nine",
       "url": "https://www.amazon.com/dp/B0HPZZSC2J",
       "image": "https://m.media-amazon.com/images/I/81kfxfWps2L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
-      "series": "",
-      "category": "fiction",
+      "series": "The Kelly Brothers Mysteries",
+      "category": "kelly",
       "section": "fiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
@@ -739,7 +739,7 @@
       "image": "https://m.media-amazon.com/images/I/71eZw2cGMrL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "Book 2 of 3: Rebuilding Without Power",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [
         {
           "format": "Paperback",
@@ -830,7 +830,7 @@
       "image": "https://m.media-amazon.com/images/I/81GkOs3l3GL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [
         {
           "format": "Paperback",
@@ -873,7 +873,7 @@
       "image": "https://m.media-amazon.com/images/I/81cDsLKapTL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [
         {
           "format": "Paperback",
@@ -905,7 +905,7 @@
       "image": "https://m.media-amazon.com/images/I/71v3MKR5k8L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [
         {
           "format": "Paperback",
@@ -921,7 +921,7 @@
       "image": "https://m.media-amazon.com/images/I/818nQoqpHxL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [
         {
           "format": "Paperback",
@@ -937,7 +937,7 @@
       "image": "https://m.media-amazon.com/images/I/81mcyOMAvYL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -948,7 +948,7 @@
       "image": "https://m.media-amazon.com/images/I/81L2lU+f7zL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1002,7 +1002,7 @@
       "image": "https://m.media-amazon.com/images/I/61kYF1fWr6L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1022,8 +1022,8 @@
       "title": "The E-Bike That Pedals Itself",
       "url": "https://www.amazon.com/dp/B0HMSGXN6G",
       "image": "https://m.media-amazon.com/images/I/61qi1GvKuDL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
-      "series": "",
-      "category": "fiction",
+      "series": "The Kelly Brothers Mysteries",
+      "category": "kelly",
       "section": "fiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
@@ -1090,7 +1090,7 @@
       "image": "https://m.media-amazon.com/images/I/51592e1a7ML._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1100,8 +1100,8 @@
       "url": "https://www.amazon.com/dp/B0HFP6JR6Q",
       "image": "https://m.media-amazon.com/images/I/51uJcSH9+kL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
-      "category": "teaching",
-      "section": "education",
+      "category": "journals",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1111,8 +1111,8 @@
       "url": "https://www.amazon.com/dp/B0HDGTXL56",
       "image": "https://m.media-amazon.com/images/I/51jRvyjcpFL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
-      "category": "teaching",
-      "section": "education",
+      "category": "journals",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1123,7 +1123,7 @@
       "image": "https://m.media-amazon.com/images/I/51yumPtIXIL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1145,7 +1145,7 @@
       "image": "https://m.media-amazon.com/images/I/61v4xKBYkxL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1165,8 +1165,8 @@
       "title": "The Sandcastle That Built Itself",
       "url": "https://www.amazon.com/dp/B0HQ52KTTN",
       "image": "https://m.media-amazon.com/images/I/61w46hkkLbL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
-      "series": "",
-      "category": "fiction",
+      "series": "The Kelly Brothers Mysteries",
+      "category": "kelly",
       "section": "fiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
@@ -1176,8 +1176,8 @@
       "title": "The Tooth Fairy Is Behind on Her Paperwork",
       "url": "https://www.amazon.com/dp/B0HPZSQ4C3",
       "image": "https://m.media-amazon.com/images/I/713JIip9u0L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
-      "series": "",
-      "category": "fiction",
+      "series": "The Kelly Brothers Mysteries",
+      "category": "kelly",
       "section": "fiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
@@ -1187,8 +1187,8 @@
       "title": "Something Is Growing in Dad's Garden",
       "url": "https://www.amazon.com/dp/B0HP7NTFL5",
       "image": "https://m.media-amazon.com/images/I/71IniKjv4cL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
-      "series": "",
-      "category": "fiction",
+      "series": "The Kelly Brothers Mysteries",
+      "category": "kelly",
       "section": "fiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
@@ -1198,8 +1198,8 @@
       "title": "Something Is Eating the Christmas Lights",
       "url": "https://www.amazon.com/dp/B0HP7HCW24",
       "image": "https://m.media-amazon.com/images/I/71YhBPzn1jL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
-      "series": "",
-      "category": "fiction",
+      "series": "The Kelly Brothers Mysteries",
+      "category": "kelly",
       "section": "fiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
@@ -1211,7 +1211,7 @@
       "image": "https://m.media-amazon.com/images/I/61fB82TtXoL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1255,7 +1255,7 @@
       "image": "https://m.media-amazon.com/images/I/71ihr-H4c4L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1266,7 +1266,7 @@
       "image": "https://m.media-amazon.com/images/I/71r-gT40pCL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "practical",
-      "section": "education",
+      "section": "nonfiction",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1332,7 +1332,7 @@
       "image": "https://m.media-amazon.com/images/I/51CIEAHEtvL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1343,7 +1343,7 @@
       "image": "https://m.media-amazon.com/images/I/51-eEnleveL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1354,7 +1354,7 @@
       "image": "https://m.media-amazon.com/images/I/51PnA6stWgL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1365,7 +1365,7 @@
       "image": "https://m.media-amazon.com/images/I/51foGc+t8OL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1376,7 +1376,7 @@
       "image": "https://m.media-amazon.com/images/I/51kbcyXKDWL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1387,7 +1387,7 @@
       "image": "https://m.media-amazon.com/images/I/51WowF+da2L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1398,7 +1398,7 @@
       "image": "https://m.media-amazon.com/images/I/51PXzLS14DL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1409,7 +1409,7 @@
       "image": "https://m.media-amazon.com/images/I/51flIa-Ma+L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1420,7 +1420,7 @@
       "image": "https://m.media-amazon.com/images/I/513lUDenn8L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1431,7 +1431,7 @@
       "image": "https://m.media-amazon.com/images/I/518pGRZF1uL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1441,8 +1441,8 @@
       "url": "https://www.amazon.com/dp/B0HCPRD4W8",
       "image": "https://m.media-amazon.com/images/I/51MFZ58pwDL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
-      "category": "teaching",
-      "section": "education",
+      "category": "journals",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1452,8 +1452,8 @@
       "url": "https://www.amazon.com/dp/B0HCNMYX66",
       "image": "https://m.media-amazon.com/images/I/51Ma8xLmQrL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
-      "category": "teaching",
-      "section": "education",
+      "category": "journals",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1464,7 +1464,7 @@
       "image": "https://m.media-amazon.com/images/I/51e1XWZ3+CL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1475,7 +1475,7 @@
       "image": "https://m.media-amazon.com/images/I/51jt8P0RrgL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1486,7 +1486,7 @@
       "image": "https://m.media-amazon.com/images/I/51onkk6z15L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1497,7 +1497,7 @@
       "image": "https://m.media-amazon.com/images/I/51ZIXfjGg0L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1508,7 +1508,7 @@
       "image": "https://m.media-amazon.com/images/I/51eq2VBN6+L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1519,7 +1519,7 @@
       "image": "https://m.media-amazon.com/images/I/51pXzGRnDyL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1530,7 +1530,7 @@
       "image": "https://m.media-amazon.com/images/I/51rVAVlf5aL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1552,7 +1552,7 @@
       "image": "https://m.media-amazon.com/images/I/61NwXtf8MqL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1563,7 +1563,7 @@
       "image": "https://m.media-amazon.com/images/I/71QD8vZc2ZL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "activities",
-      "section": "education",
+      "section": "activities",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1574,7 +1574,7 @@
       "image": "https://m.media-amazon.com/images/I/81RT24mX-aL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "activities",
-      "section": "education",
+      "section": "activities",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1585,7 +1585,7 @@
       "image": "https://m.media-amazon.com/images/I/61mBNbPJhFL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "journals",
-      "section": "education",
+      "section": "journals",
       "formats": [
         {
           "format": "Paperback",
@@ -1601,7 +1601,7 @@
       "image": "https://m.media-amazon.com/images/I/61aF2nELYRL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "activities",
-      "section": "education",
+      "section": "activities",
       "formats": [],
       "verifiedAt": "2026-11-04"
     },
@@ -1612,7 +1612,7 @@
       "image": "https://m.media-amazon.com/images/I/619+ZsExrcL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
       "series": "",
       "category": "activities",
-      "section": "education",
+      "section": "activities",
       "formats": [],
       "verifiedAt": "2026-11-04"
     }
