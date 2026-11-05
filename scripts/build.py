@@ -9,7 +9,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = 'https://origamipenguin.com'
-NAV = [('home', '/', 'Home'), ('tutorials', '/tutorials.html', 'Tutorials'), ('guide', '/guide.html', "Beginner’s Guide"), ('teachers', '/origami-for-teachers.html', 'For Teachers'), ('supplies', '/supplies.html', 'Supplies'), ('blog', '/blog.html', 'Articles'), ('books', '/books.html', 'Books'), ('textbooks', '/textbooks.html', 'Textbooks'), ('resources', '/free-resources.html', 'Free Resources'), ('chill', '/chill-corner.html', 'Chill Corner'), ('about', '/about.html', 'About')]
+NAV = [('home', '/', 'Home'), ('tutorials', '/tutorials.html', 'Tutorials'), ('guide', '/guide.html', "Beginner’s Guide"), ('teachers', '/origami-for-teachers.html', 'For Teachers'), ('supplies', '/supplies.html', 'Supplies'), ('blog', '/blog.html', 'Articles'), ('books', '/books.html', 'Books'), ('textbooks', '/textbooks.html', 'Textbooks'), ('resources', '/free-resources.html', 'Free Resources'), ('chill', '/chill-corner.html', 'Chill Corner'), ('games', '/games.html', 'Games'), ('about', '/about.html', 'About')]
 
 def canonicalize(text):
     # Cloudflare Pages serves extensionless pages and redirects .html requests.
@@ -101,6 +101,8 @@ def build():
         else: body=(ROOT/'content/legacy'/name).read_text(encoding='utf-8')
         if p.get('kind')=='journal':
             schemas[0].update({'@type':'BlogPosting','datePublished':p['published'],'dateModified':p['published']})
+        from site_experience import enhance
+        body=enhance(name,body,p,ROOT)
         nav=''.join(f'<a href="{href}"'+(' aria-current="page"' if (name=='index.html' and key=='home') or '/'+name==href else '')+(' class="nav-section"' if p.get('nav')==key else '')+f'>{label}</a>' for key,href,label in NAV)
         output=template.substitute(title=esc(p['title']),description=esc(p['description']),robots='<meta name="robots" content="noindex, follow">' if p.get('noindex') else '',canonical=f'<link rel="canonical" href="{url(name)}">' if name!='404.html' else '',url=url(name),image=esc(p.get('image',ORIGIN+'/images/og-default.png')),og_type='website' if name in ['index.html','tutorials.html','supplies.html','blog.html'] else 'article',styles='<style>'+p['styles']+'</style>' if p.get('styles') else '',schema='\n'.join(ld(s) for s in schemas),navigation=nav,body=normalize_body(body),scripts='\n'.join('<script src="/'+esc(s)+'" defer></script>' for s in p.get('scripts',[])))
         outputs[name]=re.sub(r'(href="/[a-z0-9-]+)\.html(?=["#])',r'\1',output)
@@ -115,6 +117,8 @@ def build():
     if '--check' in sys.argv and changed:
         print('Generated files need updating: '+', '.join(changed)); return 1
     print(('Verified' if '--check' in sys.argv else 'Built')+f' {len(pages)} pages and sitemap')
+    from build_metric_targets import build as build_metrics
+    build_metrics(list(outputs))
     return 0
 
 if __name__=='__main__':sys.exit(build())

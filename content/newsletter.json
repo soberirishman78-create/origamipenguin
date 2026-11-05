@@ -1,0 +1,7 @@
+{
+  "signupUrl": null,
+  "provider": null,
+  "frequency": "monthly",
+  "audience": "adults",
+  "status": "Prepared; needs a mail-service account and hosted double-opt-in signup URL."
+}
