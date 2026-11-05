@@ -1,6 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {onRequest} from '../functions/api/events.js';
+import {readFile} from 'node:fs/promises';
+const targetText=await readFile(new URL('../lib/metric-targets.js',import.meta.url),'utf8');
+const targetData=JSON.parse(targetText.slice(targetText.indexOf('export const targets = ')+23).trim().replace(/;$/, ''));
+const handlerText=(await readFile(new URL('../functions/api/events.js',import.meta.url),'utf8')).replace("import {targets} from '../../lib/metric-targets.js';",'const targets = '+JSON.stringify(targetData)+';');
+const {onRequest}=await import('data:text/javascript;base64,'+Buffer.from(handlerText).toString('base64'));
 
 function fixture(body={event:'page_view',target:'/'},headers={},method='POST'){
   const calls=[];

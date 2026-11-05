@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 class DiscoveryTests(unittest.TestCase):
     def test_counter_contract(self):
-        subprocess.run(['node','--experimental-default-type=module','tests/metrics.test.mjs'],cwd=ROOT,check=True,capture_output=True)
+        subprocess.run(['node','tests/metrics.test.mjs'],cwd=ROOT,check=True,capture_output=True)
 
     def test_resource_topics_and_packs(self):
         text=(ROOT/'free-resources.html').read_text(encoding='utf-8')
