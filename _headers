@@ -15,3 +15,11 @@ https://:project.pages.dev/*
   X-Robots-Tag: noindex
 https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex
+
+
+/lib/*
+  X-Robots-Tag: noindex
+/migrations/*
+  X-Robots-Tag: noindex
+/functions/*
+  X-Robots-Tag: noindex

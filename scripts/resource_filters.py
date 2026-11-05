@@ -16,7 +16,7 @@ def enhance_resources(page,items):
     body=body.replace('<nav class="resource-jumps"',controls+'<nav class="resource-jumps"')
     body=body.replace('<section id="math">','<section class="resource-subject" id="math">').replace('<section id="english">','<section class="resource-subject" id="english">')
     page['body']=body
-    page['scripts']=['js/resource-filters.js?v=1']
+    page['scripts']=['js/resource-discovery.js?v=1']
     page['styles']+=' .resource-filters[hidden],.resource-card[hidden],.resource-subject[hidden],.resource-jumps[hidden]{display:none}.resource-filters{display:flex;flex-wrap:wrap;gap:16px;align-items:end;padding:22px;background:#fff;border:1px solid #ccd8d6;border-radius:10px;margin:24px 0}.resource-filters>div{flex:1;min-width:180px}.resource-filters label{display:block;font-weight:700;margin-bottom:7px;color:#18394a}.resource-filters select{width:100%;padding:11px 12px;border:1px solid #6f8581;border-radius:6px;background:white;font:inherit;color:#18394a;min-height:46px}.resource-filters button{min-height:46px;border:1px solid #35645f;border-radius:6px;background:#edf3ef;padding:10px 16px;font:600 1rem system-ui;color:#18394a;cursor:pointer}.resource-filters p{flex-basis:100%;margin:0}.resource-filter-help{font-size:.85rem;color:#52615e}.resource-filters :focus-visible{outline:3px solid #a55936;outline-offset:3px}@media(max-width:540px){.resource-filters>div{flex-basis:100%;min-width:0}}'
     return page
 

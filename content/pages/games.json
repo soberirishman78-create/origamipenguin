@@ -1,0 +1,17 @@
+{
+  "slug": "games.html",
+  "title": "Browser Games | Origami Penguin",
+  "description": "Play Deadwood, Cats vs. Dogs Couch Defense, Dog Runner, and Shardkeeper: original browser games from Origami Penguin.",
+  "heading": "A little time to play.",
+  "nav": "games",
+  "breadcrumbs": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Games"
+    }
+  ],
+  "body": "<p class=\"intro\">Small browser adventures from Origami Penguin. Pick a game and play right in your browser.</p><div class=\"games-grid\"><article><h2>Deadwood</h2><p>Train a zombie horde, forage for meat, and survive alongside your companions.</p><a class=\"btn\" href=\"/deadwood\">Play Deadwood</a></article><article><h2>Cats vs. Dogs: Couch Defense</h2><p>Defend the couch in a lane-based strategy game.</p><a class=\"btn\" href=\"/cats\">Play Cats vs. Dogs: Couch Defense</a></article><article><h2>Dog Runner</h2><p>Dodge obstacles and pick up items as the dog or the owner giving chase.</p><a class=\"btn\" href=\"/dogs\">Play Dog Runner</a></article><article><h2>Shardkeeper</h2><p>A pixel adventure with a math worksheet cover when you pause your controls.</p><a class=\"btn\" href=\"/math\">Play Shardkeeper</a></article></div><aside class=\"related-experience\"><h2>Take a quieter break</h2><p><a href=\"/chill-corner\">Visit Chill Corner</a> or <a href=\"/free-resources\">find a free reference sheet</a>.</p></aside>"
+}

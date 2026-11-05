@@ -22,4 +22,4 @@ class FreeResourceTests(unittest.TestCase):
         for page in ROOT.glob('*.html'):
             if page.name in {'deadwood.html','matrix.html','cats.html','dogs.html','math.html'} or page.name.startswith('google'):continue
             self.assertIn('href="/free-resources"',page.read_text(encoding='utf-8'),page.name)
-        self.assertIn('Explore Free Resources',(ROOT/'index.html').read_text(encoding='utf-8'))
+        self.assertIn('Start with something free',(ROOT/'index.html').read_text(encoding='utf-8'))

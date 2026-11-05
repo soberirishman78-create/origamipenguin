@@ -1,0 +1,132 @@
+[
+  {
+    "grade": 0,
+    "title": "Kindergarten starter pack",
+    "url": "/resources/packs/kindergarten.pdf",
+    "sheets": [
+      "numbers-0-20",
+      "addition-subtraction",
+      "nouns",
+      "sentences-punctuation"
+    ],
+    "pages": 5
+  },
+  {
+    "grade": 1,
+    "title": "Grade 1 starter pack",
+    "url": "/resources/packs/grade-1.pdf",
+    "sheets": [
+      "numbers-0-20",
+      "place-value",
+      "addition-subtraction",
+      "time-and-money",
+      "word-problem-steps",
+      "nouns",
+      "verbs",
+      "pronouns",
+      "sentences-punctuation"
+    ],
+    "pages": 10
+  },
+  {
+    "grade": 2,
+    "title": "Grade 2 starter pack",
+    "url": "/resources/packs/grade-2.pdf",
+    "sheets": [
+      "place-value",
+      "addition-subtraction",
+      "multiplication-chart",
+      "shapes-area-perimeter",
+      "time-and-money",
+      "word-problem-steps",
+      "nouns",
+      "verbs",
+      "adjectives-adverbs",
+      "pronouns",
+      "sentences-punctuation",
+      "writing-checklist"
+    ],
+    "pages": 13
+  },
+  {
+    "grade": 3,
+    "title": "Grade 3 starter pack",
+    "url": "/resources/packs/grade-3.pdf",
+    "sheets": [
+      "place-value",
+      "multiplication-chart",
+      "division-steps",
+      "fraction-steps",
+      "measurement-conversions",
+      "shapes-area-perimeter",
+      "time-and-money",
+      "word-problem-steps",
+      "nouns",
+      "verbs",
+      "adjectives-adverbs",
+      "pronouns",
+      "sentences-punctuation",
+      "writing-checklist"
+    ],
+    "pages": 15
+  },
+  {
+    "grade": 4,
+    "title": "Grade 4 starter pack",
+    "url": "/resources/packs/grade-4.pdf",
+    "sheets": [
+      "place-value",
+      "multiplication-chart",
+      "division-steps",
+      "fraction-decimal-percent",
+      "fraction-steps",
+      "measurement-conversions",
+      "shapes-area-perimeter",
+      "decimals-operations",
+      "word-problem-steps",
+      "verbs",
+      "adjectives-adverbs",
+      "pronouns",
+      "writing-checklist",
+      "connecting-ideas"
+    ],
+    "pages": 15
+  },
+  {
+    "grade": 5,
+    "title": "Grade 5 starter pack",
+    "url": "/resources/packs/grade-5.pdf",
+    "sheets": [
+      "multiplication-chart",
+      "division-steps",
+      "fraction-decimal-percent",
+      "fraction-steps",
+      "measurement-conversions",
+      "shapes-area-perimeter",
+      "decimals-operations",
+      "word-problem-steps",
+      "adjectives-adverbs",
+      "writing-checklist",
+      "connecting-ideas"
+    ],
+    "pages": 12
+  },
+  {
+    "grade": 6,
+    "title": "Grade 6 starter pack",
+    "url": "/resources/packs/grade-6.pdf",
+    "sheets": [
+      "multiplication-chart",
+      "division-steps",
+      "fraction-decimal-percent",
+      "fraction-steps",
+      "measurement-conversions",
+      "shapes-area-perimeter",
+      "decimals-operations",
+      "word-problem-steps",
+      "writing-checklist",
+      "connecting-ideas"
+    ],
+    "pages": 11
+  }
+]

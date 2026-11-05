@@ -42,7 +42,7 @@ class JournalTests(unittest.TestCase):
         self.assertNotIn('<iframe',text)
         self.assertIn('id="chill-player"',text)
         self.assertEqual(text.count('class="chill-play"'),166)
-        self.assertIn('/js/chill-player.js',text)
+        self.assertIn('/js/chill-discovery.js',text)
         self.assertNotIn('<video',text)
         for v in videos:
             self.assertEqual(v['channelId'],'UCnt0WRg-Cv8RdcRQ011L1DA')
