@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "numbers-0-20",
+    "title": "Numbers 0-20",
+    "grades": "K-1",
+    "subject": "Math",
+    "intro": "Say it. Find it. Count one object for each number."
+  },
+  {
+    "slug": "place-value",
+    "title": "Place value",
+    "grades": "1-4",
+    "subject": "Math",
+    "intro": "A digit gets its value from its place in a number."
+  },
+  {
+    "slug": "addition-subtraction",
+    "title": "Addition & subtraction",
+    "grades": "K-2",
+    "subject": "Math",
+    "intro": "Addition joins amounts. Subtraction takes away or finds the difference."
+  },
+  {
+    "slug": "multiplication-chart",
+    "title": "Multiplication chart 0-12",
+    "grades": "2-6",
+    "subject": "Math",
+    "intro": "Find one factor on the left and the other across the top. Meet at the product."
+  },
+  {
+    "slug": "division-steps",
+    "title": "Division reminders",
+    "grades": "3-6",
+    "subject": "Math",
+    "intro": "Division makes equal groups or finds the size of each group."
+  },
+  {
+    "slug": "fraction-decimal-percent",
+    "title": "Fractions, decimals & percents",
+    "grades": "4-6",
+    "subject": "Math",
+    "intro": "These are different ways to name the same part of a whole."
+  },
+  {
+    "slug": "fraction-steps",
+    "title": "Working with fractions",
+    "grades": "3-6",
+    "subject": "Math",
+    "intro": "Use equal-sized parts. The denominator tells the size of the parts."
+  },
+  {
+    "slug": "measurement-conversions",
+    "title": "Measurement conversions",
+    "grades": "3-6",
+    "subject": "Math",
+    "intro": "Use matching units. These customary measures use U.S. units."
+  },
+  {
+    "slug": "shapes-area-perimeter",
+    "title": "Shapes, area & perimeter",
+    "grades": "2-6",
+    "subject": "Math",
+    "intro": "Perimeter is distance around. Area measures a surface."
+  },
+  {
+    "slug": "decimals-operations",
+    "title": "Decimals & operation order",
+    "grades": "4-6",
+    "subject": "Math",
+    "intro": "Read places carefully and estimate before calculating."
+  },
+  {
+    "slug": "time-and-money",
+    "title": "Time & money",
+    "grades": "1-3",
+    "subject": "Math",
+    "intro": "Take one step at a time. Label minutes, hours, cents, or dollars."
+  },
+  {
+    "slug": "word-problem-steps",
+    "title": "Word problems: a calm plan",
+    "grades": "1-6",
+    "subject": "Math",
+    "intro": "You do not have to solve it all at once. Start with what you know."
+  },
+  {
+    "slug": "nouns",
+    "title": "Nouns: name it",
+    "grades": "K-3",
+    "subject": "English",
+    "intro": "A noun names a person, place, thing, or idea."
+  },
+  {
+    "slug": "verbs",
+    "title": "Verbs: action & being",
+    "grades": "1-4",
+    "subject": "English",
+    "intro": "A verb tells what happens or connects the subject to information about it."
+  },
+  {
+    "slug": "adjectives-adverbs",
+    "title": "Adjectives & adverbs",
+    "grades": "2-5",
+    "subject": "English",
+    "intro": "Use describing words to make a sentence more precise."
+  },
+  {
+    "slug": "pronouns",
+    "title": "Pronouns & clear sentences",
+    "grades": "1-4",
+    "subject": "English",
+    "intro": "A pronoun can take the place of a noun. Make it clear who or what it means."
+  },
+  {
+    "slug": "sentences-punctuation",
+    "title": "Sentences & punctuation",
+    "grades": "K-3",
+    "subject": "English",
+    "intro": "A complete sentence shares a complete thought."
+  },
+  {
+    "slug": "writing-checklist",
+    "title": "My writing check",
+    "grades": "2-6",
+    "subject": "English",
+    "intro": "Read your writing one small part at a time."
+  },
+  {
+    "slug": "connecting-ideas",
+    "title": "Connecting ideas",
+    "grades": "4-6",
+    "subject": "English",
+    "intro": "Use connecting words to show how ideas belong together."
+  }
+]
