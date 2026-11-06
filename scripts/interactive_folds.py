@@ -61,6 +61,12 @@ def model(name, intro, moves, sheet=square, material="paper"):
         if flags:
             before["actions"][0]["layer"] = tip_layer(old, start, end)
         steps.append(dict(title=title,text=text,scene=before,result=scene(layers)))
+    palette = {"bill": ("#edf4de", "#87ad77"), "note": ("#fff9b8", "#f4d566")}.get(material)
+    if palette:
+        for step in steps:
+            for key in ("scene", "result"):
+                for layer in step.get(key, {}).get("layers", []):
+                    layer["fill"] = palette[layer["fill"] == back]
     return dict(name=name,material=material,steps=steps)
 
 down=('Make a triangle','Bring the top point to the bottom point. Press along the horizontal fold.',(200,70),(200,330))
@@ -154,6 +160,67 @@ model('Dollar Bill Pennant',bill_setup,[
  ('Shorten the flat end','Bring the left edge partway toward the point. Keep its crease vertical.',(50,200),(246,200)),
  ('Show the front','Flip the folded pennant left to right to see the smooth side.',None,None),
 ],bill,'bill'),
+]
+note_setup = 'Start with one square sticky note, sticky side up. Keep it loose on the table so you can turn and fold it. Orient it like a diamond.'
+models += [
+model('Dollar Bill House',bill_setup,[
+ ('Fold the left third in','Bring the left end toward the right. Keep the crease vertical.',(50,200),(250,200)),
+ ('Fold the right end inward','Bring the right end in to narrow the body. This will be the back when you flip it.',(350,200),(250,200)),
+ ('Shape the upper-left roof','Bring the upper-left corner diagonally down and right.',(150,136),(200,186)),
+ ('Shape the upper-right roof','Bring the upper-right corner diagonally down and left to match.',(300,136),(250,186)),
+ turn,
+],bill,'bill'),
+model('Dollar Bill Necktie',bill_setup,[
+ ('Narrow the top edge','Bring the upper edge down to the middle of the bill.',(200,136),(200,200)),
+ ('Narrow the bottom edge','Bring the lower edge up to meet it.',(200,264),(200,200)),
+ ('Make the tip','Fold the upper-right corner diagonally down to the middle.',(350,168),(318,200)),
+ ('Finish the tip','Fold the lower-right corner diagonally up to the same spot.',(350,232),(318,200)),
+ ('Fold the knot end','Bring the flat left end a short way inward to make the knot area.',(50,200),(100,200)),
+],bill,'bill'),
+model('Dollar Bill Name Tent',bill_setup,[
+ ('Make the roof ridge','Bring the bottom long edge to the top long edge and crease. To stand the tent on a table, lift the crease and spread the two long edges apart.',(200,264),(200,136)),
+],bill,'bill'),
+model('Dollar Bill Chevron',bill_setup,[
+ ('Fold up the lower edge','Bring the lower long edge to the upper long edge to make a strip.',(200,264),(200,136)),
+ ('Angle the left end down','Bring the left end down and inward so it sticks below the strip.',(50,168),(155,273)),
+ ('Angle the right end down','Mirror the left fold. The finished shape has two downward arms.',(350,168),(245,273)),
+],bill,'bill'),
+model('Dollar Bill Ticket Sleeve',bill_setup,[
+ ('Raise a pocket flap','Bring the bottom edge partway up. Leave an open band above it.',(200,264),(200,169)),
+ ('Fold the left end inward','Bring the left end inward to narrow the pocket.',(50,200),(118,200)),
+ ('Fold the right end inward','Bring the right end inward to match. Slip a small paper ticket behind the raised flap.',(350,200),(282,200)),
+],bill,'bill'),
+model('Dollar Bill Mountain Badge',bill_setup,[
+ ('Fold the lower edge up','Bring the bottom long edge onto the top long edge.',(200,264),(200,136)),
+ ('Raise the left end','Fold the left end diagonally up and inward.',(50,168),(164,54)),
+ ('Raise the right end','Repeat the fold on the right, so both ends point up.',(350,168),(236,54)),
+ ('Turn it over','Flip the folded badge left to right to see the smoother face.',None,None),
+],bill,'bill'),
+model('Sticky Note Tulip',note_setup,[
+ up,
+ ('Lift the left petal','Bring the left point diagonally up and toward the middle. Keep it beside the central point.',(70,200),(151,102)),
+ ('Lift the right petal','Bring the right point diagonally up to match the left.',(330,200),(249,102)),
+ ('Flatten the base','Bring the middle of the bottom edge up just a little.',(200,200),(200,177)),
+ turn,
+],square,'note'),
+model('Sticky Note Butterfly',note_setup,[
+ down,
+ ('Lift the left wing','Bring the left point diagonally up, leaving a wing that sticks out on that side.',(70,200),(126,138)),
+ ('Lift the right wing','Bring the right point diagonally up to the same height.',(330,200),(274,138)),
+ ('Shorten the body','Bring the bottom point partway up between the wings.',(200,330),(200,241)),
+],square,'note'),
+model('Sticky Note Corner Marker',note_setup,[
+ down,
+ ('Fold the front tip up','Bring only the front bottom point to the middle of the long top edge. Leave the back layer down.',(200,330),(200,200),True),
+ ('Close the left side','Fold the left point inward across the front flap.',(70,200),(170,235)),
+ ('Close the right side','Fold the right point inward to match. Slip a page corner between the front flap and the back layer.',(330,200),(230,235)),
+],square,'note'),
+model('Sticky Note Mini Envelope',note_setup,[
+ ('Fold the left point in','Bring the left point to the centre of the note.',(70,200),(200,200)),
+ ('Fold the right point in','Bring the right point to the same spot.',(330,200),(200,200)),
+ ('Raise the bottom flap','Bring the bottom point a little past the centre.',(200,330),(200,176)),
+ ('Close the top flap','Fold the top point down over the other folds.',(200,70),(200,235)),
+],square,'note'),
 ]
 p = Path(__file__).resolve().parents[1] / 'content/interactive-folds.json'
 p.write_text('[\n'+',\n'.join(json.dumps(m,ensure_ascii=False,separators=(',',':')) for m in models)+'\n]\n',encoding='utf-8')
