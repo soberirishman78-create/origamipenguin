@@ -32,4 +32,4 @@ def symbol(model):
 
 catalog = models('interactive-folds.json') + models('fold-quest.json')
 sprite = '<svg xmlns="http://www.w3.org/2000/svg">\n' + '\n'.join(map(symbol, catalog)) + '\n</svg>\n'
-(ROOT / 'images' / 'finished-origami.svg').write_text(sprite, encoding='utf-8')
+(ROOT / 'images' / 'finished-origami-projects.svg').write_text(sprite, encoding='utf-8')
