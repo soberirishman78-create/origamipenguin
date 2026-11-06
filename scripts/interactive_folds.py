@@ -65,20 +65,20 @@ turn=('Turn the model over','Flip the paper left to right, keeping the top edge 
 diamond='Put a square of paper down like a diamond, with a point at the top. The lighter side starts up.'
 models=[
 model('Kite',diamond,[
- ('Fold the left lower edge inward','Bring the left corner onto the centre line. The fold starts at the bottom point.',(70,200),(200,254)),
- ('Fold the right lower edge inward','Mirror the first fold so the two folded edges meet along the centre line.',(330,200),(200,254)),
+ ('Fold the left lower edge inward','Bring the left corner to the centre line, a little below the middle of the sheet. Match the lower-left edge to the centre line.',(70,200),(200,254)),
+ ('Fold the right lower edge inward','Bring the right corner to the same spot on the centre line. The two lower edges should now meet along that line.',(330,200),(200,254)),
 ]),
 model('Cat Face',diamond,[
  down,
  ('Raise the left ear','Bring the left corner diagonally up and slightly inward. Leave a pointed ear above the straight edge.',(70,200),(100,155)),
- ('Raise the right ear','Match the angle and height of the left ear.',(330,200),(300,155)),
+ ('Raise the right ear','Pull the right corner diagonally up and slightly inward, matching the height of the left ear.',(330,200),(300,155)),
  ('Soften the chin','Fold a small bit of the bottom point up. Keep the fold shallow.',(200,330),(200,304)),
  turn,
 ]),
 model('Dog Face',diamond,[
  down,
  ('Fold the left ear down','Pull the left corner diagonally down to make a floppy ear.',(70,200),(112,277)),
- ('Fold the right ear down','Repeat on the right so the ears hang at the same height.',(330,200),(288,277)),
+ ('Fold the right ear down','Pull the right corner diagonally down and inward. Match the height of the left ear.',(330,200),(288,277)),
  ('Fold up the muzzle','Turn up a small triangle at the bottom. You can draw a nose on this flap.',(200,330),(200,282)),
 ]),
 model('Fox Face',diamond,[
@@ -104,7 +104,7 @@ model('Paper Cup',diamond,[
 model('Sailboat',diamond,[
  up,
  ('Fold a strip for the hull','Bring the middle of the bottom edge up toward the tip, leaving most of the triangle visible as the sail.',(200,200),(200,154)),
- ('Turn the boat over','Flip the shape to see the broad face of the sail and the folded hull on the reverse.',None,None),
+ ('Turn the boat over','Flip the boat left to right, keeping the sail pointing up. The narrow hull sits along the bottom.',None,None),
 ])]
 p = Path(__file__).resolve().parents[1] / 'content/interactive-folds.json'
 p.write_text('[\n'+',\n'.join(json.dumps(m,ensure_ascii=False,separators=(',',':')) for m in models)+'\n]\n',encoding='utf-8')
