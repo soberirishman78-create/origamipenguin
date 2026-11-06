@@ -1,0 +1,21 @@
+{
+  "slug": "practice.html",
+  "title": "Five-minute math practice | Origami Penguin",
+  "heading": "Five-minute math practice",
+  "description": "Try five questions on multiplication or equivalent fractions, with hints and worked answers.",
+  "body": "<p>Pick a topic and try five questions at your own pace.</p><section id=\"math-practice\" class=\"related-experience\" hidden>\n<label for=\"practice-topic\">Topic</label> <select id=\"practice-topic\"><option value=\"fractions\">Equivalent fractions</option><option value=\"multiplication\">Multiplication</option></select>\n<form id=\"practice-form\"><p id=\"practice-progress\"></p><p><label id=\"practice-question\" for=\"practice-answer\"></label></p><input id=\"practice-answer\" type=\"text\" inputmode=\"numeric\" maxlength=\"5\" required autocomplete=\"off\" pattern=\"[0-9]+\"> <button type=\"submit\">Check answer</button></form>\n<p><button id=\"practice-hint\" type=\"button\">Show hint</button> <button id=\"practice-reveal\" type=\"button\">Show worked answer</button> <button id=\"practice-next\" type=\"button\" hidden>Next question</button> <button id=\"practice-restart\" type=\"button\" hidden>Start another round</button></p>\n<p id=\"practice-feedback\" role=\"status\"></p></section><noscript><p>Try the printable activity and answer key in the lesson below.</p></noscript>\n<p><a href=\"/fractions-with-paper\">Fractions with Paper Folding</a> · <a href=\"/resources/multiplication-chart.pdf\">Multiplication chart</a></p>",
+  "breadcrumbs": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Five-minute math practice"
+    }
+  ],
+  "nav": "resources",
+  "scripts": [
+    "js/math-practice.js"
+  ],
+  "styles": "#math-practice button,#math-practice input,#math-practice select{font:inherit;min-height:44px;padding:.45rem .65rem;margin:.2rem}#practice-answer{width:7rem;max-width:100%}#math-practice [hidden]{display:none}"
+}

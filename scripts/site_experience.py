@@ -86,7 +86,14 @@ def related(name,body,p):
  return body+'<aside class="related-experience"><h2>Keep exploring</h2><ul>'+''.join('<li><a href="'+url+'">'+text+'</a></li>' for url,text in links)+'</ul></aside>'
 
 def enhance(name,body,p,root):
- if name=='index.html':body=home()
+ if name=='index.html':
+  body=home()+'<section class="explore-feature"><h2>What’s new</h2><ul><li><a href="/fractions-with-paper">New lesson: Fractions with Paper Folding</a></li><li><a href="/practice">New five-minute math practice</a></li><li><a href="/kelly-brothers-reading-order">New Kelly Brothers reading guide</a></li><li><a href="/free-resources#starter-packs">Printable grade packs</a></li><li><a href="/chill-corner#rain">Featured listening: Distant Forest Drums &amp; Gentle Rain</a></li></ul></section>'
+ if name=='books.html':
+  body='<aside class="related-experience"><h2>Start a series</h2><p><a href="/kelly-brothers-reading-order">Kelly Brothers reading order</a> · <a href="/skybridge-reading-order">Skybridge reading order</a></p></aside>'+body
+ if name=='origami-for-teachers.html':
+  body+='<aside class="related-experience"><h2>Ready-to-teach fraction lesson</h2><a href="/fractions-with-paper">Fractions with Paper Folding</a></aside>'
+ if name=='free-resources.html':
+  body='<aside class="related-experience"><h2>Try five-minute practice</h2><p><a href="/practice?topic=fractions">Practice equivalent fractions</a> · <a href="/practice?topic=multiplication">Practice multiplication</a> · <a href="/fractions-with-paper">Paper-folding lesson</a></p></aside>'+body
  if name=='free-resources.html':body=resources(body,root)
  if name=='chill-corner.html':body=chill(body,root)
  body=related(name,body,p)
