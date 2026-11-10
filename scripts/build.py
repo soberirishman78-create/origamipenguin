@@ -103,7 +103,8 @@ def build():
             schemas[0].update({'@type':'BlogPosting','datePublished':p['published'],'dateModified':p['published']})
         from site_experience import enhance
         body=enhance(name,body,p,ROOT)
-        nav=''.join(f'<a href="{href}"'+(' aria-current="page"' if (name=='index.html' and key=='home') or '/'+name==href else '')+(' class="nav-section"' if p.get('nav')==key else '')+f'>{label}</a>' for key,href,label in NAV)
+        page_nav = NAV + [('reader', '/e-reader.html', 'E-Reader')] if name in ('index.html', 'books.html', 'textbooks.html', 'e-reader.html') else NAV
+        nav=''.join(f'<a href="{href}"'+(' aria-current="page"' if (name=='index.html' and key=='home') or '/'+name==href else '')+(' class="nav-section"' if p.get('nav')==key else '')+f'>{label}</a>' for key,href,label in page_nav)
         output=template.substitute(title=esc(p['title']),description=esc(p['description']),robots='<meta name="robots" content="noindex, follow">' if p.get('noindex') else '',canonical=f'<link rel="canonical" href="{url(name)}">' if name!='404.html' else '',url=url(name),image=esc(p.get('image',ORIGIN+'/images/og-default.png')),og_type='website' if name in ['index.html','tutorials.html','supplies.html','blog.html'] else 'article',styles='<style>'+p['styles']+'</style>' if p.get('styles') else '',schema='\n'.join(ld(s) for s in schemas),navigation=nav,body=normalize_body(body),scripts='\n'.join('<script src="/'+esc(s)+'" defer></script>' for s in p.get('scripts',[])))
         outputs[name]=re.sub(r'(href="/[a-z0-9-]+)\.html(?=["#])',r'\1',output)
     sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+esc(url(p['slug']))+'</loc></url>\n' for p in pages if not p.get('noindex'))+'</urlset>\n'

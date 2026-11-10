@@ -1,0 +1,21 @@
+{
+  "slug": "e-reader.html",
+  "title": "E-Reader | Origami Penguin",
+  "heading": "E-Reader",
+  "description": "Open EPUB, PDF, Word and text files in a private browser reading window.",
+  "nav": "reader",
+  "breadcrumbs": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "E-Reader"
+    }
+  ],
+  "body": "<p>Open a book or document from your device. Files stay in your browser.</p>\n<section id=\"reader\" aria-label=\"Document reader\">\n<div class=\"reader-toolbar\">\n<label for=\"reader-file\">Choose a file</label><input id=\"reader-file\" type=\"file\" accept=\".epub,.pdf,.docx,.txt,.md,.csv,.log,.json,.html,.htm,.png,.jpg,.jpeg,.webp,.gif,.avif,.bmp\">\n<button type=\"button\" id=\"reader-expand\" aria-pressed=\"false\">Expand reader</button>\n<a id=\"reader-open\" target=\"_blank\" rel=\"noopener\" hidden>Open separately</a>\n</div>\n<p class=\"reader-drop\">Drop a file anywhere in this reading window.</p>\n<p id=\"reader-status\" role=\"status\">Choose a document to start reading.</p>\n<div id=\"reader-pages\" class=\"reader-toolbar\" hidden><button type=\"button\" id=\"reader-previous\">Previous section</button><span id=\"reader-position\" aria-live=\"polite\"></span><button type=\"button\" id=\"reader-next\">Next section</button></div>\n<div id=\"reader-output\" tabindex=\"0\" aria-label=\"Document content\" hidden></div>\n</section>\n<p><strong>Supported files</strong> EPUB, PDF, Word (.docx), HTML, plain text, Markdown, CSV, JSON, and common images up to 80 MB. EPUB, Word and HTML use a simplified reading view. Markdown and CSV open as text. PDF controls depend on your browser. DRM-protected books and older .doc files are unsupported.</p>\n<noscript><p>Enable JavaScript to open files in this reader.</p></noscript>",
+  "styles": "#reader{background:#fffdf9;border:1px solid #c4d4cf;border-radius:14px;padding:clamp(.8rem,3vw,1.5rem);margin:1.3rem 0;color:#223947}#reader [hidden]{display:none}.reader-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:.7rem}.reader-toolbar label{font-weight:700}.reader-toolbar button,.reader-toolbar input::file-selector-button{font:inherit;padding:.55rem .75rem;border:1px solid #57766d;border-radius:6px;background:#edf5f0;color:#213f38;cursor:pointer}#reader-file{font:inherit;max-width:100%}.reader-drop{border:2px dashed #99b3a8;padding:.75rem;text-align:center;border-radius:8px}#reader-status{overflow-wrap:anywhere}#reader-output{overflow:auto;min-height:18rem;max-height:70vh;padding:clamp(.7rem,3vw,2rem);border:1px solid #d1ddd6;border-radius:8px;background:white;line-height:1.7;overflow-wrap:anywhere}#reader-output pre{white-space:pre-wrap}#reader-output img{display:block;max-width:100%;height:auto;margin:auto}#reader-output.reader-media{padding:0}#reader-output iframe{width:100%;height:66vh;min-height:18rem;display:block;border:0}#reader.reader-expanded{position:fixed;inset:0;z-index:1000;margin:0;border-radius:0;display:flex;flex-direction:column;overflow:auto}#reader.reader-expanded #reader-output{flex:1;max-height:none}#reader.reader-expanded iframe{height:100%}.reader-lock{overflow:hidden}",
+  "scripts": [
+    "js/e-reader.js"
+  ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Reader | Origami Penguin</title>
+  <meta name="description" content="Open EPUB, PDF, Word and text files in a private browser reading window.">
+  
+  <link rel="canonical" href="https://origamipenguin.com/e-reader">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Origami Penguin">
+  <meta property="og:title" content="E-Reader | Origami Penguin">
+  <meta property="og:description" content="Open EPUB, PDF, Word and text files in a private browser reading window.">
+  <meta property="og:url" content="https://origamipenguin.com/e-reader">
+  <meta property="og:image" content="https://origamipenguin.com/images/og-default.png">
+  <meta property="og:image:alt" content="Origami Penguin paper-folding tutorials and guides">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/style.css?v=5">
+  <link rel="stylesheet" href="/experience.css?v=1">
+  <style>#reader{background:#fffdf9;border:1px solid #c4d4cf;border-radius:14px;padding:clamp(.8rem,3vw,1.5rem);margin:1.3rem 0;color:#223947}#reader [hidden]{display:none}.reader-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:.7rem}.reader-toolbar label{font-weight:700}.reader-toolbar button,.reader-toolbar input::file-selector-button{font:inherit;padding:.55rem .75rem;border:1px solid #57766d;border-radius:6px;background:#edf5f0;color:#213f38;cursor:pointer}#reader-file{font:inherit;max-width:100%}.reader-drop{border:2px dashed #99b3a8;padding:.75rem;text-align:center;border-radius:8px}#reader-status{overflow-wrap:anywhere}#reader-output{overflow:auto;min-height:18rem;max-height:70vh;padding:clamp(.7rem,3vw,2rem);border:1px solid #d1ddd6;border-radius:8px;background:white;line-height:1.7;overflow-wrap:anywhere}#reader-output pre{white-space:pre-wrap}#reader-output img{display:block;max-width:100%;height:auto;margin:auto}#reader-output.reader-media{padding:0}#reader-output iframe{width:100%;height:66vh;min-height:18rem;display:block;border:0}#reader.reader-expanded{position:fixed;inset:0;z-index:1000;margin:0;border-radius:0;display:flex;flex-direction:column;overflow:auto}#reader.reader-expanded #reader-output{flex:1;max-height:none}#reader.reader-expanded iframe{height:100%}.reader-lock{overflow:hidden}</style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "E-Reader", "description": "Open EPUB, PDF, Word and text files in a private browser reading window.", "mainEntityOfPage": "https://origamipenguin.com/e-reader", "author": {"@type": "Organization", "name": "Origami Penguin", "url": "https://origamipenguin.com/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://origamipenguin.com/"}, {"@type": "ListItem", "position": 2, "name": "E-Reader"}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <a href="/" class="site-logo">🐧 Origami Penguin</a>
+    <p>Fold, write, learn, and make something your own.</p>
+  </header>
+  <nav class="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/tutorials">Tutorials</a><a href="/guide">Beginner’s Guide</a><a href="/origami-for-teachers">For Teachers</a><a href="/supplies">Supplies</a><a href="/blog">Articles</a><a href="/books">Books</a><a href="/textbooks">Textbooks</a><a href="/free-resources">Free Resources</a><a href="/chill-corner">Chill Corner</a><a href="/games">Games</a><a href="/about">About</a><a href="/e-reader" aria-current="page" class="nav-section">E-Reader</a></nav>
+  <main id="main" tabindex="-1"><div class="container">
+<p class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> E-Reader</p><h1>E-Reader</h1><p>Open a book or document from your device. Files stay in your browser.</p>
+<section id="reader" aria-label="Document reader">
+<div class="reader-toolbar">
+<label for="reader-file">Choose a file</label><input id="reader-file" type="file" accept=".epub,.pdf,.docx,.txt,.md,.csv,.log,.json,.html,.htm,.png,.jpg,.jpeg,.webp,.gif,.avif,.bmp">
+<button type="button" id="reader-expand" aria-pressed="false">Expand reader</button>
+<a id="reader-open" target="_blank" rel="noopener" hidden>Open separately</a>
+</div>
+<p class="reader-drop">Drop a file anywhere in this reading window.</p>
+<p id="reader-status" role="status">Choose a document to start reading.</p>
+<div id="reader-pages" class="reader-toolbar" hidden><button type="button" id="reader-previous">Previous section</button><span id="reader-position" aria-live="polite"></span><button type="button" id="reader-next">Next section</button></div>
+<div id="reader-output" tabindex="0" aria-label="Document content" hidden></div>
+</section>
+<p><strong>Supported files</strong> EPUB, PDF, Word (.docx), HTML, plain text, Markdown, CSV, JSON, and common images up to 80 MB. EPUB, Word and HTML use a simplified reading view. Markdown and CSV open as text. PDF controls depend on your browser. DRM-protected books and older .doc files are unsupported.</p>
+<noscript><p>Enable JavaScript to open files in this reader.</p></noscript>
+  </div></main>
+  <footer>
+    <p>&copy; 2026 OrigamiPenguin.com &mdash; Fold with joy!</p>
+    <p>As an Amazon Associate we earn from qualifying purchases.</p>
+    <p><a href="/affiliate-disclosure">Affiliate Disclosure</a> · <a href="/privacy">Privacy Policy</a> · <a href="/about">About</a></p>
+  </footer>
+  <script src="/js/site-metrics.js?v=1" defer></script>
+  <script src="/js/e-reader.js" defer></script>
+</body>
+</html>
